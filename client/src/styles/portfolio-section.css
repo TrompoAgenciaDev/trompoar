@@ -1,0 +1,76 @@
+.portfolio-section{
+  height: 1080px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;  
+  background-color: #222222;
+  position: relative;
+}
+
+.bg-section{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: transparent;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+/* No está resuelta la parte del fadeout de la imagen de fondo */
+
+.bg-section.fade-out{
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+@keyframes opcityImage {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.portfolio-header{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: 10;
+}
+
+.grid-portfolio{
+  width: 100%;
+  height: 75%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  border-collapse: collapse;
+  z-index: 10;
+}
+
+.portfolio-item{
+  display: grid;
+  align-content: flex-end;
+  border: 1px solid #dddddd18;
+  cursor: pointer;
+  padding-bottom: 16px;
+}
+
+.bg-color-jump{  
+  background-color: #dddddd4f;
+  backdrop-filter: blur(3px);
+}
+
+.portfolio-item h2{
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+}

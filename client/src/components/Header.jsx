@@ -8,7 +8,7 @@ const Header = () => {
             <img src="./public/logo.png" alt="" />
           </a>
           <div className="nav-button">
-            <img src="./public/icons/burguer.png" alt="" />
+            <img src="./public/icons/burguer.svg" alt="" />
           </div>
       </div>
     </header>

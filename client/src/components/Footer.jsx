@@ -1,3 +1,7 @@
+import Menu from './Menu';
+import routesConfig from "../routes/AppRoutes";
+
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -11,15 +15,15 @@ const Footer = () => {
           <section className="footer-section">
             <div className="footer-menu">
               <h3>Marketing Digital</h3>
-              {/* <MenuDigital/> */}
+              <Menu menuType="marketingDigital" routes={routesConfig} classMenu="footer-menu-items"/>
             </div>
             <div className="footer-menu">
               <h3>Desarrollo y Marca</h3>
-              {/* <MenuDesarrollo/> */}
+              <Menu menuType="desarrolloWebYBranding" routes={routesConfig} classMenu="footer-menu-items"/>
             </div>
             <div className="footer-menu">
               <h3>Contenidos</h3>
-              {/* <MenuContenidos/> */}
+              <Menu menuType="marketingDeContenidos" routes={routesConfig} classMenu="footer-menu-items"/>
             </div>
           </section>
           <section className="footer-section">

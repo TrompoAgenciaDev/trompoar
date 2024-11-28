@@ -1,0 +1,48 @@
+
+.slider-container{
+  height: 150px;
+  display: grid;
+  align-content: center;
+}
+
+.slider-tool{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  transition: animateTools infinite;
+  overflow: hidden;
+}
+
+.slider-inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  animation: slide 100s infinite linear;
+}
+
+.slider-inner img {
+  width: 100%;
+  max-width: 300px;
+  object-fit: contain;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-100%);
+  }
+  40% {
+    transform: translateX(-200%);
+  }
+  60% {
+    transform: translateX(-300%);
+  }
+  80% {
+    transform: translateX(-400%);
+  }
+  100% {
+    transform: translateX(-500%);
+  }
+}

@@ -1,0 +1,29 @@
+.hero-container{
+  height: 100dvh;
+  background-color: #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 250px;
+  gap: 100px;
+}
+
+.hero-text p {
+  text-transform: uppercase;
+  text-align: justify;
+  line-height: 1.2;
+}
+
+.hero-text p span {
+  font-weight: 700;
+}
+
+@media (min-width: 1366px) {
+  .hero-text{
+    font-size: 44px;
+    width: 600px;
+    font-weight: 600;
+  }    
+}
+
