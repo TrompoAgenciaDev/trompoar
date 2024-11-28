@@ -1,0 +1,150 @@
+:root {
+  font-family: 'Creato Display', system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 300;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+#root{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+img{
+  width: 100%;
+}
+
+header{
+  min-width: 100%;
+  height: 10dvh;
+  min-height: 70px;
+  display: grid;
+  align-content: center;
+  background-color: transparent;
+  position: sticky;
+  top: 0;
+}
+
+.container{
+  width: 100%;
+  padding: 0 20px;
+}
+
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-button{
+  width: 40px;
+  cursor: pointer;
+}
+
+.logo-img img{
+  width: 150px;
+}
+
+.footer .logo-img img{
+  width: 150px;
+}
+
+.footer{
+  width: 100%;
+  padding: 50px 0;
+  background-color: #242424;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.grid-footer-container{
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer-section{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;  
+}
+
+.footer-section:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.footer-menu h3{
+  font-size: 16px;
+  text-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .container{
+    padding: 0 50px;
+  }
+  .grid-footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "section1 section1"
+        "section2 section3";
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .footer-section:first-child {
+      grid-area: section1;
+  }
+
+  .footer-section:nth-child(2) {
+      grid-area: section2;
+  }
+
+  .footer-section:last-child {
+      grid-area: section3;
+  }
+  .footer .logo-img img{
+    width: 250px;
+  }
+
+}
+
+@media (min-width: 1366px) {
+  .grid-footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 80px;
+  }
+}
