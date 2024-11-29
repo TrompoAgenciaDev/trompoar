@@ -2,22 +2,45 @@ import '../styles/hero.css';
 import Icon from './Icon';
 import '../styles/hero.css';
 import '../styles/social-icons.css';
+import {motion} from 'framer-motion';
 
 const Hero = () => {
  return (
-  <div className="container hero-container">
+  <motion.div className="container hero-container"
+
+    initial={{
+      opacity: .5,
+      y: 0
+    }}
+    whileInView={{
+      scale: 1,
+      opacity: 1,
+    }}
+
+  >
     <div className="hero-text">
-      <p>SOMOS <span>TROMPO</span> UNA
-      AGENCIA DE MKT DGTL
-      SOCIAL MEDIA &
-      AUDIOVISUAL</p>
+      <motion.p       
+       initial={{
+        opacity: 0,
+        y: 400      
+       }}
+       animate={{
+        opacity: 1,
+        y: 0
+       }}
+      >
+          SOMOS <span>TROMPO</span> UNA
+          AGENCIA DE MKT DGTL
+          SOCIAL MEDIA &
+          AUDIOVISUAL
+      </motion.p>
     </div>
     <div className="social-icons">
       <Icon iconName='facebook'/>
       <Icon iconName='instagram'/>
       <Icon iconName='googleplus'/>
     </div>
-  </div>
+  </motion.div>
  );
 }
 

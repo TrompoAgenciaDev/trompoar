@@ -1,6 +1,7 @@
 .hero-container{
   height: 100dvh;
   background-color: #ddd;
+  background-color: #242424;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,6 +25,7 @@
     font-size: 44px;
     width: 600px;
     font-weight: 600;
+    overflow: hidden;
   }    
 }
 

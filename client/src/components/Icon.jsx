@@ -1,4 +1,4 @@
-import Burguer from '../../public/socialIcons/burguer.svg'
+import Burguer from '../../public/menuIcons/burguer.svg'
 import Facebook from '../../public/socialIcons/facebook.svg'
 import Instagram from '../../public/socialIcons/instagram.svg'
 import GooglePlus from '../../public/socialIcons/googleplus.svg'
