@@ -10,23 +10,36 @@
   gap: 100px;
 }
 
-.hero-text p {
+.hero-text *{
   text-transform: uppercase;
-  line-height: 1.2;
+}
+
+.hero-text p {
+  line-height: 73px;
   overflow: hidden;
+  font-size: 76px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+}
+
+.hero-text > p > div{
+  overflow: hidden;
+}
+
+.hero-text .bold-title{
+  font-weight: 800;
 }
 
 @media (min-width: 1366px) {
   .hero-text{
-    font-size: 44px;
-    width: 550px;
-    font-weight: 600;
+    font-size: 76px;
+    width: 700px;
+    font-weight: 500;
     overflow: hidden;
   }
-  .hero-text p div{
-    display: flex;
-    justify-content: space-between;
-  }
-
+  .hero-text p {
+  gap: 24px;
+}
 }
 

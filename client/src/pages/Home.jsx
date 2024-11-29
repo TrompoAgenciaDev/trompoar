@@ -1,18 +1,20 @@
-import Hero from '../components/Hero';
-import ScrollingContainer from '../components/motions/ScrollingContainer';
-import ToolsSlider from '../components/slides/ToolsSlider';
-import VideoSection from '../components/VideoSection';
-import PortfolioSection from '../components/PortfolioSection';
+import Hero from "../components/Hero";
+
+import ToolsSlider from "../components/slides/ToolsSlider";
+import VideoSection from "../components/VideoSection";
+import PortfolioSection from "../components/PortfolioSection";
+import PreFooter from "../components/PreFooter";
 
 const Home = () => {
   return (
     <main>
-        <Hero />
-        <section className="slider-container">
-          <ToolsSlider/>
-        </section>
-        <VideoSection/>
-        <PortfolioSection/>
+      <Hero />
+      <section className="slider-container">
+        <ToolsSlider />
+      </section>
+      <VideoSection />
+      <PortfolioSection />
+      <PreFooter />
     </main>
   );
 };

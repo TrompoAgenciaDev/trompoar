@@ -1,14 +1,16 @@
 .portfolio-section{
-  height: 1080px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;  
+  align-items: flex-start;
   background-color: #222222;
   position: relative;
+  padding: 150px 50px 50px;
+  gap: 150px;
 }
 
-.bg-section{
+.bg-section {
   position: absolute;
   top: 0;
   left: 0;
@@ -16,17 +18,23 @@
   height: 100%;
   z-index: 1;
   background-color: transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
-/* No está resuelta la parte del fadeout de la imagen de fondo */
-
-.bg-section.fade-out{
-  opacity: 0;
-  transition: opacity .3s ease-in-out;
+.bg-section.fade-in {
+  opacity: 1;
 }
 
+.bg-section.fade-out {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+/*
 @keyframes opcityImage {
   0%{
     opacity: 1;
@@ -34,7 +42,7 @@
   100%{
     opacity: 0;
   }
-}
+}*/
 
 .portfolio-header{
   display: flex;
@@ -42,6 +50,16 @@
   justify-content: flex-start;
   align-items: flex-start;
   z-index: 10;
+}
+
+.portfolio-title{
+  font-size: 120px;
+  text-transform: uppercase;
+}
+
+.portfolio-excerpt{
+  font-size: 23px;
+  text-align: justify;
 }
 
 .grid-portfolio{
@@ -55,6 +73,7 @@
 }
 
 .portfolio-item{
+  height: 300px;
   display: grid;
   align-content: flex-end;
   border: 1px solid #dddddd18;

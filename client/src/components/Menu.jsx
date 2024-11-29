@@ -1,11 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-//Secondary menus. I separate it as a component, to reuse later in any section of the website
-//It recieves a type of menu (see AppRoutes.jsx) and brings it.
+// Componente para renderizar menús secundarios
+// Recibe un tipo de menú (menuType), las rutas (routes) y una clase CSS opcional (classMenu)
 
-const Menu = ({ menuType, routes, classMenu }) => {
-
+const Menu = ({ menuType, routes, classMenu = "" }) => {
   const menuItems = routes[menuType];
 
   if (!menuItems) {
@@ -24,6 +23,5 @@ const Menu = ({ menuType, routes, classMenu }) => {
     </nav>
   );
 };
-
 
 export default Menu;

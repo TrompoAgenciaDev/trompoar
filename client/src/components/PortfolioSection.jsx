@@ -1,36 +1,57 @@
-import React, { useState } from 'react';
-import PortfolioItems from './PortfolioItems';
-import '../styles/portfolio-section.css';
+import { useState } from "react";
+import PortfolioItems from "./PortfolioItems";
+
+//styles
+import "../styles/portfolio-section.css";
 
 const PortfolioSection = () => {
-  const [backgroundImage, setBackgroundImage] = useState(""); // Estado para la imagen de fondo
+  const [backgroundImage, setBackgroundImage] = useState("");
+  const [isHovered, setIsHovered] = useState(false);
 
-  return(
+  const handleMouseEnter = (image) => {
+    setBackgroundImage(image);
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  return (
     <div className="container portfolio-section">
-      <div 
-        className={`bg-section ${backgroundImage ? '' : 'fade-out'}`} 
-        style={{ backgroundImage: `url(${backgroundImage})`, opacity: backgroundImage ? 1 : 0 }}
-      >
+      {/* Acá se muestra la imagen de fondo de cada portfolio */}
+      <div
+        className={`bg-section ${isHovered ? "fade-in" : "fade-out"}`}
+        style={{ backgroundImage: `url(${backgroundImage})` }}
+      />
 
-      </div>
       <div className="portfolio-header">
-        <h2 className="portfolio-title">
-          Portfolio
-        </h2>
+        <h2 className="portfolio-title">Portfolio</h2>
         <p className="portfolio-excerpt">
+          <br />
           SOMO UN EQUIPO INTERDISCIPLINARIO CON MAS DE 10 AÑOS
+          <br />
           DE EXPERIENCIA, BRINDAMOS RESPUESTAS A TRAVES DE LAS
+          <br />
           MEJORES HERRAMIENTAS PARA GESTIONAR LA PRESENCIA DE
-          TU MARCA EN EL MUNDO ONLINE. NOS ENFOCAMOS EN EN-
-          TENDER LOS OBJETOS DE TUS NEGOCIOS Y CREAMOS ESTRA-
-          TEGIAS PERSONALIZADAS QUE CONECTEN MARCAS CON AU-
-          DIENCIAS ESTRATEGICAS
+          <br />
+          TU MARCA EN EL MUNDO ONLINE. NOS ENFOCAMOS EN EN-TENDER
+          <br />
+          LOS OBJETOS DE TUS NEGOCIOS Y CREAMOS ESTRATEGIAS
+          <br />
+          PERSONALIZADAS QUE CONECTEN MARCAS CON AUDIENCIAS
+          <br />
+          ESTRATEGICAS
         </p>
       </div>
-      {/* Pasamos la función setBackgroundImage como prop a PortfolioItems */}
-      <PortfolioItems setBackgroundImage={setBackgroundImage} />
+
+      {/* Portfolio con todos los proyectos. */}
+      <PortfolioItems
+        handleMouseEnter={handleMouseEnter}
+        handleMouseLeave={handleMouseLeave}
+      />
     </div>
   );
-}
+};
 
 export default PortfolioSection;

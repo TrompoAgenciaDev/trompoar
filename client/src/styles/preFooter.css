@@ -1,0 +1,29 @@
+.pre-footer{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 100px 50px;
+}
+
+.grid-pre-footer{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.pre-footer-text{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: justify;
+    font-size: 54px;
+    line-height: 65px;
+}
+
+.pre-footer-text div:nth-child(1),
+.pre-footer-text div:nth-child(2){
+    font-weight: 700;
+}
+
+.text-prefooter-conainer{
+    max-width: 980px;
+}
