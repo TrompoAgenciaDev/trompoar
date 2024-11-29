@@ -12,20 +12,21 @@
 
 .hero-text p {
   text-transform: uppercase;
-  text-align: justify;
   line-height: 1.2;
-}
-
-.hero-text p span {
-  font-weight: 700;
+  overflow: hidden;
 }
 
 @media (min-width: 1366px) {
   .hero-text{
     font-size: 44px;
-    width: 600px;
+    width: 550px;
     font-weight: 600;
     overflow: hidden;
-  }    
+  }
+  .hero-text p div{
+    display: flex;
+    justify-content: space-between;
+  }
+
 }
 

@@ -11,11 +11,14 @@ const Header = () => {
              href="/"
              initial={{
               y: -250,
-              opacity: 0,
              }}
              animate={{
               y: 0,
-              opacity: 1,
+             }}
+             transition={{
+               type: 'spring',
+               damping: 20,
+               stiffness: 350,
              }}
           >
                 <img src="./public/logo.png" alt="" />
@@ -29,6 +32,12 @@ const Header = () => {
               y: 0,
               opacity: 1,
              }}
+              transition={{
+                delay: .3,
+                type: 'spring',
+                damping: 28,
+                stiffness: 350,
+              }}
           >
             <img src="./public/menuIcons/burguer.svg" alt="menu" />
           </motion.div>
