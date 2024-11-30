@@ -1,6 +1,9 @@
-import "../styles/hero.css";
-import Icon from "./Icon";
-import "../styles/social-icons.css";
+import "@as/hero.css";
+import Icon from "./Icons";
+
+
+//styles and animations
+import "@as/social-icons.css";
 import { motion } from "framer-motion";
 
 const Hero = () => {

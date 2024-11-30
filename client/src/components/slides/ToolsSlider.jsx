@@ -1,18 +1,18 @@
-import Facebook from "../../../public/toolsImg/facebook-ads.png";
-import Google from "../../../public/toolsImg/google-ads.png";
-import Ganalytics from "../../../public/toolsImg/google-a.png";
-import GdataStudio from "../../../public/toolsImg/google-data-studio.png";
-import GsearchConsole from "../../../public/toolsImg/google-search-console.png";
-import Instagram from "../../../public/toolsImg/instagram-ads.png";
-import Linkedin from "../../../public/toolsImg/linkedin-ads.png";
-import Semrush from "../../../public/toolsImg/semrush.png";
-import Supermetrics from "../../../public/toolsImg/supermetrics.png";
-import Woocommerce from "../../../public/toolsImg/woocommerce.png";
-import Wordpress from "../../../public/toolsImg/wordpress.png";
-import Zapier from "../../../public/toolsImg/zapier.png";
+import Facebook from "@at/facebook-ads.png";
+import Google from "@at/google-ads.png";
+import Ganalytics from "@at/google-a.png";
+import GdataStudio from "@at/google-data-studio.png";
+import GsearchConsole from "@at/google-search-console.png";
+import Instagram from "@at/instagram-ads.png";
+import Linkedin from "@at/linkedin-ads.png";
+import Semrush from "@at/semrush.png";
+import Supermetrics from "@at/supermetrics.png";
+import Woocommerce from "@at/woocommerce.png";
+import Wordpress from "@at/wordpress.png";
+import Zapier from "@at/zapier.png";
 
 //styles
-import "../../styles/slider-tool.css";
+import "@as/slider-tool.css";
 
 const marcas = {
   facebook: Facebook,

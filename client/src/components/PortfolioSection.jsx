@@ -1,28 +1,26 @@
-import { useState } from "react";
+import useHoverBackground from "../hooks/useHoverBackground";
 import PortfolioItems from "./PortfolioItems";
 
 //styles
-import "../styles/portfolio-section.css";
+import "@as/portfolio-section.css";
 
 const PortfolioSection = () => {
-  const [backgroundImage, setBackgroundImage] = useState("");
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleMouseEnter = (image) => {
-    setBackgroundImage(image);
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
+  const {
+    backgroundImage,
+    opacity,
+    handleMouseEnter,
+    handleMouseLeave,
+  } = useHoverBackground();
 
   return (
     <div className="container portfolio-section">
-      {/* Acá se muestra la imagen de fondo de cada portfolio */}
       <div
-        className={`bg-section ${isHovered ? "fade-in" : "fade-out"}`}
-        style={{ backgroundImage: `url(${backgroundImage})` }}
+        className="bg-section"
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+          opacity: opacity,
+          transition: "opacity 0.3s ease-in-out",
+        }}
       />
 
       <div className="portfolio-header">
@@ -45,7 +43,6 @@ const PortfolioSection = () => {
         </p>
       </div>
 
-      {/* Portfolio con todos los proyectos. */}
       <PortfolioItems
         handleMouseEnter={handleMouseEnter}
         handleMouseLeave={handleMouseLeave}

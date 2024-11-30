@@ -1,15 +1,12 @@
 import { useState } from "react";
-import MenuPopup from "./popups/MenuPopup";
-import '../styles/menuPopup.css'
+
+import Icons from './Icons';
 
 //styles & animations
 import { motion } from "framer-motion";
 
-const Header = () => {
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
-
-  const openPopup = () => setIsPopupOpen(true);
-  const closePopup = () => setIsPopupOpen(false);
+const Header = ({onTogglePopup}) => {
+  const [showPopuup, setShowPopup] = useState(false);
 
   return (
     <header className="header">
@@ -29,7 +26,7 @@ const Header = () => {
             stiffness: 350,
           }}
         >
-          <img src="./public/logo.png" alt="" />
+          <Icons iconName="logo"/>
         </motion.a>
         <motion.button
           className="nav-button"
@@ -47,14 +44,12 @@ const Header = () => {
             damping: 28,
             stiffness: 350,
           }}
+          onClick={onTogglePopup}
         >
-          <img
-            src="./public/menuIcons/burguer.svg"
-            alt="menu"
-            className="open-popup"
-          />
+
+          <Icons iconName="burguer"/>
+
         </motion.button>
-        <MenuPopup isOpen={isPopupOpen} onClose={closePopup} />
       </div>
     </header>
   );

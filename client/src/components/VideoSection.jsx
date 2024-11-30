@@ -1,4 +1,4 @@
-import '../styles/video-section.css';
+import '@as/video-section.css';
 import {motion} from 'framer-motion'
 
 const VideoSection = () => {

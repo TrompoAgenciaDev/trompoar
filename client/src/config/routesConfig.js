@@ -1,5 +1,3 @@
-// src/config/routesConfig.js
-
 import Home from "../pages/Home";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
@@ -20,12 +18,12 @@ import SocialMedia from "../pages/SocialMedia";
 
 const routesConfig = {
   main: [
-    { path: "/", label: "Home", Component: Home },
+    { path: "/home", label: "Home", Component: Home },
     { path: "/about", label: "About", Component: About },
-    { path: "/contact", label: "Contact", Component: Contact },
     { path: "/marketing-digital", label: "Marketing Digital", Component: MarketingDigital },
     { path: "/desarrollo-web-y-branding", label: "Desarrollo Web y Branding", Component: DesarrolloWebYBranding },
     { path: "/marketing-de-contenidos", label: "Marketing de Contenidos", Component: MarketingDeContenidos },
+    { path: "/contact", label: "Contact", Component: Contact },
   ],
   marketingDigital: [
     { path: "/marketing-digital/analitica-web", label: "Analítica Web", Component: AnaliticaWeb },

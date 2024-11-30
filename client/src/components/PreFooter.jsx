@@ -1,4 +1,4 @@
-import "../styles/preFooter.css";
+import "@as/preFooter.css";
 
 const PreFooter = () => {
   return (

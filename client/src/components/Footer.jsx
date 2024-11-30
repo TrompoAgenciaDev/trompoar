@@ -1,6 +1,7 @@
 import Menu from './Menu';
 import routesConfig from "../routes/AppRoutes";
 
+import Icons from './Icons';
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
         <div className="grid-footer-container">
           <section className="footer-section">
             <a className="logo-img" href="/">
-              <img src="./public/logo.png" alt="" />
+              <Icons iconName="logo"/>
             </a>
           </section>
           <section className="footer-section">
