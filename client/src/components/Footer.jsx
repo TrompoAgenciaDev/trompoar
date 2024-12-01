@@ -1,45 +1,61 @@
-import Menu from './Menu';
-import routesConfig from "../routes/AppRoutes";
+import Menu from "@/components/Menu";
+import routesConfig from "@/config/routesConfig";
 
-import Icons from './Icons';
+import Icon from './Icons';
+
+//styles and animations, if..
+ import '@as/footer.css'
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="container">
-        <div className="grid-footer-container">
+    <footer className="medium-container footer">
+      <div className="grid-footer-container">
           <section className="footer-section">
             <a className="logo-img" href="/">
-              <Icons iconName="logo"/>
+              <Icon iconName="logo"/>
             </a>
           </section>
           <section className="footer-section">
             <div className="footer-menu">
-              <h3>Marketing Digital</h3>
-              <Menu menuType="marketingDigital" routes={routesConfig} classMenu="footer-menu-items"/>
+              <h3>Marketing<br/>Digital</h3>
+              <Menu
+                menuType="marketingDigital"
+                routes={routesConfig}
+                classMenu="footer-menu-items"
+              />
             </div>
             <div className="footer-menu">
-              <h3>Desarrollo y Marca</h3>
-              <Menu menuType="desarrolloWebYBranding" routes={routesConfig} classMenu="footer-menu-items"/>
+              <h3>Desarrollo y<br/> Marca</h3>
+              <Menu
+                menuType="desarrolloWebYBranding"
+                routes={routesConfig}
+                classMenu="footer-menu-items"
+              />
             </div>
             <div className="footer-menu">
-              <h3>Contenidos</h3>
-              <Menu menuType="marketingDeContenidos" routes={routesConfig} classMenu="footer-menu-items"/>
+              <h3>Contenidos<br/><br/></h3>
+              <Menu
+                menuType="marketingDeContenidos"
+                routes={routesConfig}
+                classMenu="footer-menu-items"
+              />
             </div>
           </section>
+
           <section className="footer-section">
             <div className="footer-tags">
               <p>#Marketing Digital Aplicado</p>
               <p>#Reportes en tiempo real</p>
               <p>#Procesos de mejora continua</p>
               <p>#Especialistas en performance</p>
-            </div>
-            <div className="social-icons">
-              
+              <div className="social-icons">
+                <Icon iconName="facebook" />
+                <Icon iconName="instagram" />
+                <Icon iconName="googleplus" />
+              </div>
             </div>
           </section>
         </div>
-      </div>
     </footer>
   );
 };

@@ -35,12 +35,6 @@ const MenuPopup = ({ isOpen, onClose }) => {
           }}
         >
           <div className="medium-container popup-content">
-            <Menu
-              menuType="main"
-              routes={routesConfig}
-              classMenu="main-menu"
-              onClose={onClose} // Pasando la función onClose aquí
-            />
             <motion.button
               className="close-button"
               onClick={onClose}
@@ -58,6 +52,12 @@ const MenuPopup = ({ isOpen, onClose }) => {
                 iconName="close"
               />
             </motion.button>
+            <Menu
+              menuType="main"
+              routes={routesConfig}
+              classMenu="main-menu"
+              onClose={onClose}
+            />
           </div>
         </motion.div>
       )}

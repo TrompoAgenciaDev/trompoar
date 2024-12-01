@@ -3,6 +3,7 @@ import { useState } from "react";
 import Icons from './Icons';
 
 //styles & animations
+import '@as/header.css'
 import { motion } from "framer-motion";
 
 const Header = ({onTogglePopup}) => {
@@ -10,7 +11,7 @@ const Header = ({onTogglePopup}) => {
 
   return (
     <header className="header">
-      <div className="medium-container header-container">
+      <div className="container header-container">
         <motion.a
           className="logo-img"
           href="/"

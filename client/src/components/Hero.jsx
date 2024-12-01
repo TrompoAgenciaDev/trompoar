@@ -1,8 +1,7 @@
-import "@as/hero.css";
 import Icon from "./Icons";
 
-
 //styles and animations
+import "@as/hero.css";
 import "@as/social-icons.css";
 import { motion } from "framer-motion";
 
@@ -11,7 +10,7 @@ const Hero = () => {
     <motion.div className="container hero-container">
       <div className="hero-text">
         <p>
-          <motion.div
+          <motion.span
             initial={{ y: 200 }}
             animate={{
               y: [200, 0, 0, 0, 0, 0, 0, -200],
@@ -24,8 +23,8 @@ const Hero = () => {
             }}
           >
             somos
-          </motion.div>
-          <motion.div
+          </motion.span>
+          <motion.span
             className="bold-title"
             initial={{ y: 200 }}
             animate={{
@@ -40,11 +39,11 @@ const Hero = () => {
             }}
           >
             trompo
-          </motion.div>
+          </motion.span>
         </p>
 
         <p>
-          <motion.div
+          <motion.span
             initial={{ y: 200 }}
             animate={{
               y: [200, 0, 0, 0, 0, 0, 0, -200],
@@ -58,8 +57,8 @@ const Hero = () => {
             }}
           >
             una
-          </motion.div>
-          <motion.div
+          </motion.span>
+          <motion.span
             initial={{ y: 200 }}
             animate={{
               y: [200, 0, 0, 0, 0, 0, 0, -200],
@@ -73,8 +72,8 @@ const Hero = () => {
             }}
           >
             agencia
-          </motion.div>
-          <motion.div
+          </motion.span>
+          <motion.span
             initial={{ y: 200 }}
             animate={{
               y: [200, 0, 0, 0, 0, 0, 0, -200],
@@ -88,11 +87,11 @@ const Hero = () => {
             }}
           >
             de
-          </motion.div>
+          </motion.span>
         </p>
 
         <p>
-          <motion.div
+          <motion.span
             initial={{ y: 200 }}
             animate={{
               y: [200, 0, 0, 0, 0, 0, 0, -200],
@@ -106,8 +105,8 @@ const Hero = () => {
             }}
           >
             MKT
-          </motion.div>
-          <motion.div
+          </motion.span>
+          <motion.span
             initial={{ y: 200 }}
             animate={{
               y: [200, 0, 0, 0, 0, 0, 0, -200],
@@ -121,11 +120,11 @@ const Hero = () => {
             }}
           >
             DGTL
-          </motion.div>
+          </motion.span>
         </p>
 
         <p>
-          <motion.div
+          <motion.span
             initial={{ y: 200 }}
             animate={{
               y: [200, 0, 0, 0, 0, 0, 0, -200],
@@ -139,8 +138,8 @@ const Hero = () => {
             }}
           >
             SOCIAL
-          </motion.div>
-          <motion.div
+          </motion.span>
+          <motion.span
             initial={{ y: 200 }}
             animate={{
               y: [200, 0, 0, 0, 0, 0, 0, -200],
@@ -154,8 +153,8 @@ const Hero = () => {
             }}
           >
             MEDIA
-          </motion.div>
-          <motion.div
+          </motion.span>
+          <motion.span
             initial={{ y: 200 }}
             animate={{
               y: [200, 0, 0, 0, 0, 0, 0, -200],
@@ -169,11 +168,11 @@ const Hero = () => {
             }}
           >
             &
-          </motion.div>
+          </motion.span>
         </p>
 
         <p>
-          <motion.div
+          <motion.span
             initial={{ y: 200 }}
             animate={{
               y: [200, 0, 0, 0, 0, 0, 0, -200],
@@ -187,7 +186,7 @@ const Hero = () => {
             }}
           >
             AUDIOVISUAL
-          </motion.div>
+          </motion.span>
         </p>
       </div>
 

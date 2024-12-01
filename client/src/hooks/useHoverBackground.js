@@ -5,15 +5,15 @@ const useHoverBackground = () => {
   const [opacity, setOpacity] = useState(1);
 
   const handleMouseEnter = (image) => {
-    setOpacity(0); // Ocultar la imagen actual
+    setOpacity(0);
     setTimeout(() => {
       setBackgroundImage(image);
-      setOpacity(1); // Mostrar la nueva imagen
-    },150); // Tiempo de espera para la transición
+      setOpacity(1);
+    },150);
   };
 
   const handleMouseLeave = () => {
-    setOpacity(1); // Restablecer opacidad al salir
+    setOpacity(1);
   };
 
   return {

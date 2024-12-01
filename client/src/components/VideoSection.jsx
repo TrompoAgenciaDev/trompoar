@@ -1,13 +1,21 @@
+//styles and animations
 import '@as/video-section.css';
-import {motion} from 'framer-motion'
+
+import video from '/assets/videos/volvo.mp4';
+
 
 const VideoSection = () => {
-  return (
-    <section className="container video-section">
 
-    </section>
-  )
-}
-
+  return (    
+    <video
+      className="video-background"
+      src={video}
+      autoPlay
+      muted
+      loop
+      playsInline
+    />
+  );
+};
 
 export default VideoSection;

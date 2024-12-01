@@ -17,11 +17,12 @@ const PortfolioSection = () => {
       <div
         className="bg-section"
         style={{
-          backgroundImage: `url(${backgroundImage})`,
-          opacity: opacity,
+          backgroundImage: backgroundImage ? `url(${backgroundImage})` : "none",
+          opacity: backgroundImage ? opacity : 0,
           transition: "opacity 0.3s ease-in-out",
         }}
       />
+
 
       <div className="portfolio-header">
         <h2 className="portfolio-title">Portfolio</h2>

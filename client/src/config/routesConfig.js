@@ -18,7 +18,7 @@ import SocialMedia from "../pages/SocialMedia";
 
 const routesConfig = {
   main: [
-    { path: "/home", label: "Home", Component: Home },
+    { path: "/", label: "Home", Component: Home },
     { path: "/about", label: "About", Component: About },
     { path: "/marketing-digital", label: "Marketing Digital", Component: MarketingDigital },
     { path: "/desarrollo-web-y-branding", label: "Desarrollo Web y Branding", Component: DesarrolloWebYBranding },

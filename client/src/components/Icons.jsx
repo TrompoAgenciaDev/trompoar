@@ -1,8 +1,8 @@
-import Burguer from '@ai/burguer.svg';
-import Facebook from '@ai/facebook.svg';
-import Instagram from '@ai/instagram.svg';
-import GooglePlus from '@ai/googleplus.svg';
-import Close from '@ai/close.svg';
+import Burguer from '/assets/icons/burguer.svg';
+import Facebook from '/assets/icons/facebook.svg';
+import Instagram from '/assets/icons/instagram.svg';
+import GooglePlus from '/assets/icons/googleplus.svg';
+import Close from '/assets/icons/close.svg';
 import Logo from '@a/logo.png';
 
 const icons = {
