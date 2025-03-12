@@ -4,7 +4,7 @@ import ToolsSlider from "../components/slides/ToolsSlider";
 import VideoSection from "../components/VideoSection";
 import PortfolioSection from "../components/PortfolioSection";
 import PreFooter from "../components/PreFooter";
-
+import PostsList from "../components/posts/PostList";
 
 const Home = () => {
   return (
@@ -14,6 +14,7 @@ const Home = () => {
       <VideoSection />
       <PortfolioSection />
       <PreFooter />
+      <PostsList />
     </main>
   );
 };

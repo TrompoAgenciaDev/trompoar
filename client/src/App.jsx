@@ -6,7 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import MenuPopup from "@/components/popups/MenuPopup";
 import useTogglePopup from '@/hooks/useTogglePopup';
-import cursor from '/favicon.png';  // Aquí va tu ícono personalizado
+import cursor from '/favicon.png';
 import CustomCursor from "./components/CustomCursor";
 
 function App() {
