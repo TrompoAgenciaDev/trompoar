@@ -1,11 +1,11 @@
 header {
   width: 100%;
   height: 100px;
-  min-height: 70px;
+  min-height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #a7a7a7;
   position: fixed;
   top: 0;
   z-index: 9999;
@@ -14,14 +14,33 @@ header {
 .header-container {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  background-image: image-set(
+    url(../../assets/noise-bg.webp) type("image/webp"),
+    url(../../assets/noise-bg.png) type("image/png")
+  );
+  background-size: cover;
+  background-position: center;
+}
+
+.header-container * svg{
+  width: 45px;
+  height: 45px;
+  color: #FEC235;
+}
+
+.header-container .menu-icon-container {
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .nav-button {
   width: 60px;
   cursor: pointer;
-  background-color: #000000;
+  background-color: transparent;
   padding: 16px 10px 10px;
   border: none;
 }
@@ -31,9 +50,6 @@ header {
 }
 
 @media (min-width: 768px) {
-  header {
-    background-color: transparent;
-  }
   .logo-img img {
     width: 200px;
   }
@@ -49,7 +65,7 @@ header {
   }
 
   .logo-img img {
-    width: 200px;
+    width: 250px;
   }
 
   .nav-button {
@@ -60,7 +76,8 @@ header {
 
 @media (min-width: 1366px) {
   .logo-img img {
-    width: 220px;
+    width: 300px;
+    padding-top: 12px;
   }
 
   .nav-button {

@@ -48,7 +48,7 @@ const Header = ({onTogglePopup}) => {
           onClick={onTogglePopup}
         >
 
-          <Icons iconName="burguer"/>
+          <Icons iconName={"burguer"}/>
 
         </motion.button>
       </div>
