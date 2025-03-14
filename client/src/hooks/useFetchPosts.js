@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 const API_BASE_URL = import.meta.env.API_BASE_URL || "https://trompoagencia.com/wp-json/wp/v2/";
 
-const useFetchPosts = (limit = 12, order = "desc") => {
+const useFetchPosts = (limit = 12, order = "asc") => {
   const [posts, setPosts] = useState([]);
   
   useEffect(() => {

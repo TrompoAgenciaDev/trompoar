@@ -1,34 +1,19 @@
 .hero-container{
   height: 100%;
-  background-color: #242424; /* provisorio */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   padding: 250px 10px 100px;
   gap: 50px;
-}
 
-.hero-text *{
-  text-transform: uppercase;
-}
-
-.hero-text p {
-  line-height: 40px;
-  overflow: hidden;
-  font-size: 32px;
-  font-weight: 500;
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-}
-
-.hero-text > p > span{
-  overflow: hidden;
-}
-
-.hero-text .bold-title{
-  font-weight: 800;
+  
+  background-image: image-set(
+    url(../../assets/hero-img.webp) type("image/webp"),
+    url(../../assets/hero-img.png) type("image/png")
+  );
+  background-size: cover;
+  background-position: top center;
 }
 
 @media (min-width: 540px) {

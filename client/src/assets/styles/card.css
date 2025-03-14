@@ -1,0 +1,119 @@
+.section-container{  
+  width: 100%;
+  height: 2000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  padding: 70px 0;
+}
+
+.section-container::after,
+.section-container::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: -1;
+}
+
+.section-container::before{
+  background-color: #FEC235;
+  height: 40%;
+  top: 0;
+}
+
+.section-container::after{
+  background-color: #303030;
+  height: 60%;
+  bottom: 0;
+  background-image: image-set(
+    url(../../assets/noise-bg.webp) type("image/webp"),
+    url(../../assets/noise-bg.png) type("image/png"));  
+  background-size: cover;
+  background-position: center center;
+}
+
+.cards-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.title-section{
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1;
+  color: #212121;
+}
+
+.subtitle-section{
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 50px;
+  color: #212121;
+}
+
+.card{
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px; 
+  border-radius: 58px;
+  overflow: hidden;
+  padding-top: 10px;
+}
+
+.card-header{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 40px;
+}
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px 20px;
+}
+
+.card-footer{
+  width: 100%;
+  height: 150px;
+  background-image: image-set(
+    url(./card/card-footer.webp) type("image/webp"),
+    url(./card/card-footer.png) type("image/png"));
+  background-size: cover;
+  background-position: center center;
+}
+
+.card.card-black{
+  background-color: #212121;
+}
+
+.card.card-white{
+  background-color: #ffffff;
+  color: #212121;
+}
+
+.card.card-grey{
+  background-color: #7D7D7D;
+  color: #ffffff;
+}
+
+.card.card-yellow{
+  background-color: #FEC235;
+  color: #212121;
+}
+
+.card.card-golden{
+  background-color: #E88D10;
+  color: #ffffff;
+}

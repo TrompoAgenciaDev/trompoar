@@ -23,8 +23,8 @@ const PostsList = ({ initialLimit = 12, maxLimit = 100 }) => {
           value={order}
           onChange={(e) => setOrder(e.target.value)}
         >
-          <option value="desc">Más recientes</option>
           <option value="asc">Más antiguos</option>
+          <option value="desc">Más recientes</option>
         </select>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
