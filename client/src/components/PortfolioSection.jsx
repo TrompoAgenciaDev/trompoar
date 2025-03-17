@@ -1,5 +1,6 @@
 import useHoverBackground from "../hooks/useHoverBackground";
-import PortfolioItems from "./PortfolioItems";
+import { useHover } from "../context/HoverContext";
+import PortfolioCarruselSection from "./PortfolioCarruselSection";
 
 //styles
 import "@as/portfolio-section.css";
@@ -44,10 +45,7 @@ const PortfolioSection = () => {
         </p>
       </div>
 
-      <PortfolioItems
-        handleMouseEnter={handleMouseEnter}
-        handleMouseLeave={handleMouseLeave}
-      />
+      <PortfolioCarruselSection/>
     </div>
   );
 };

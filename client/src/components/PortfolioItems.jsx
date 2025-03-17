@@ -4,7 +4,7 @@ import usePortfolioItems from "../hooks/usePortfolioItems";
 //styles and animations
 import {motion} from 'framer-motion';
 
-const PortfolioItems = ({ handleMouseEnter, handleMouseLeave }) => {
+const PortfolioItems = ({ handleMouseEnter, handleMouseLeave}) => {
   const [quantity, setQuantity] = useState(12);
   const [category, setCategory] = useState("");
   const [tag, setTag] = useState("");
@@ -15,6 +15,7 @@ const PortfolioItems = ({ handleMouseEnter, handleMouseLeave }) => {
     tag,
   });
 
+  
   if (loading) return <p>Cargando...</p>;
   if (error) return <p>{error}</p>;
 

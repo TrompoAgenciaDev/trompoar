@@ -7,9 +7,4 @@
   background-color: #212121;
   position: relative;
   padding: 40px 0;
-  background-image: image-set(
-    url(../../assets/noise-bg.webp) type("image/webp"),
-    url(../../assets/noise-bg.png) type("image/png"));
-  background-size: cover;
-  background-position: center;
 }

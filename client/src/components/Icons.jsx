@@ -2,6 +2,7 @@ import Facebook from '/assets/icons/facebook.svg';
 import Instagram from '/assets/icons/instagram.svg';
 import GooglePlus from '/assets/icons/googleplus.svg';
 import Close from '/assets/icons/close.svg';
+import ArrowTr from '/assets/icons/arrow-tr.svg';
 import Logo from '@a/logo.png';
 
 const icons = {
@@ -9,6 +10,7 @@ const icons = {
   instagram: Instagram,
   googleplus: GooglePlus,
   close: Close,
+  arrowTr: ArrowTr,
   logo: Logo,
 };
 

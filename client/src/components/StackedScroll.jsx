@@ -66,9 +66,10 @@ export default function StackedScroll() {
         </h1>
 
         {Array(1).fill(null).map((_, index) =>
-          Object.entries(dataCard).map(([key, {title, subtitle, description, className}]) => (
+          Object.entries(dataCard).map(([key, {title, subtitle, description, className, id}]) => (
             <Card
               key={`${key}-${index}`}
+              id={id}
               title={title}
               subtitle={subtitle}
               description={description}

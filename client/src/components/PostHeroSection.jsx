@@ -6,7 +6,7 @@ import "@as/post-hero.css";
 
 const PostHeroSection = () => {
   return (
-    <section className="container post-hero-container">
+    <section className="container post-hero-container noise-bg">
 
       <ToolsSlider/>
       <MktSlider/>
