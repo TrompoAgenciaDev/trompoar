@@ -7,7 +7,7 @@
   align-items: center;
   position: relative;
   padding: 70px 0;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .section-container::after,
@@ -30,8 +30,8 @@
   height: 60%;
   bottom: 0;
   background-image: image-set(
-    url(../../assets/noise-bg.webp) type("image/webp"),
-    url(../../assets/noise-bg.png) type("image/png"));  
+    url(./noise-bg.webp) type("image/webp"),
+    url(./noise-bg.png) type("image/png"));  
   background-size: cover;
   background-position: center center;
 }

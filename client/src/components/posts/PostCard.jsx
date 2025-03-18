@@ -1,9 +1,9 @@
 import React, { useState } from "react";	
 import useFetchPosts from "../../hooks/useFetchPosts";
 
-const PostCard = ({ initialLimit = 12, maxLimit = 100 }) => {
+const PostCard = ({ initialLimit = 999, maxLimit = 1000 }) => {
   const [visiblePosts, setVisiblePosts] = useState(initialLimit);
-  const [order, setOrder] = useState("desc");
+  const [order, setOrder] = useState("asc");
   const posts = useFetchPosts(maxLimit, order);
 
   const handleLoadMore = () => {

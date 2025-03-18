@@ -19,12 +19,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: image-set(
-    url(../../assets/noise-bg.webp) type("image/webp"),
-    url(../../assets/noise-bg.png) type("image/png")
-  );
-  background-size: cover;
-  background-position: center;
 }
 
 .header-container * svg{

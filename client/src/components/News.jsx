@@ -21,7 +21,6 @@ const News = () => {
         maxLimit={3}
       />
 
-
       <div className="title-section">
         <h1 className="title">
           <b>Somos</b> el puente entre grandes ideas y resultados.

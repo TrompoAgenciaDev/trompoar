@@ -3,6 +3,7 @@ import MktSlider from "./slides/MktSlider";
 
 //styles
 import "@as/post-hero.css";
+import EstrategiesText from "./EstrategiesText";
 
 const PostHeroSection = () => {
   return (
@@ -10,7 +11,7 @@ const PostHeroSection = () => {
 
       <ToolsSlider/>
       <MktSlider/>
-
+      <EstrategiesText/>
 
     </section>
   );

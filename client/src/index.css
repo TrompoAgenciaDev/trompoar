@@ -32,7 +32,6 @@ body{
 main {
   width: 100%;
   max-width: 100%;
-  overflow-x: hidden;
 }
 
 img{
@@ -55,6 +54,14 @@ img{
     url(./noise-bg.png) type("image/png"));
   background-size: cover;
   background-position: center;
+}
+
+.hover-y{
+  transition: color .3s ease-in-out;
+}
+
+.hover-y:hover{
+  color: #fec235;
 }
 
 @media (min-width: 768px) {

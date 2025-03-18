@@ -11,7 +11,7 @@ const Header = ({onTogglePopup}) => {
 
   return (
     <header className="header">
-      <div className="container header-container">
+      <div className="container header-container noise-bg">
         <motion.a
           className="logo-img"
           href="/"

@@ -8,7 +8,7 @@ import Icon from './Icons';
 
 const Footer = () => {
   return (
-    <footer className="medium-container footer">
+    <footer className="medium-container footer noise-bg">
       <div className="grid-footer-container">
           <section className="footer-section">
             <a className="logo-img" href="/">
