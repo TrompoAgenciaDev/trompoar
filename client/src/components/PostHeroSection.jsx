@@ -1,4 +1,4 @@
-import ToolsSlider from "./slides/ToolsSlider";
+import SimpleSlider from "./slides/SimpleSlider";
 import MktSlider from "./slides/MktSlider";
 
 //styles
@@ -9,7 +9,9 @@ const PostHeroSection = () => {
   return (
     <section className="container post-hero-container noise-bg">
 
-      <ToolsSlider/>
+      <SimpleSlider
+        slide="brands"
+      />
       <MktSlider/>
       <EstrategiesText/>
 

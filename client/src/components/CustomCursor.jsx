@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useHover } from "../context/HoverContext";
-import Icons from ".//Icons"; 
+import Icons from "./Icons"; 
 
 import '../assets/styles/custom-cursor.css';
 import { motion } from "framer-motion";
@@ -12,15 +12,16 @@ const CustomCursor = ({ icon }) => {
 
   useEffect(() => {
     const handleMouseMove = (event) => {
-      // Sumar window.scrollY a la posición y para tener en cuenta el desplazamiento de la página
-      setMousePosition({
-        x: event.clientX,
-        y: event.clientY + window.scrollY, // Ajustamos la posición Y con el scroll
+      requestAnimationFrame(() => {
+        setMousePosition({
+          x: event.clientX,
+          y: event.clientY + window.scrollY,
+        });
       });
     };
-
+  
     window.addEventListener("mousemove", handleMouseMove);
-
+  
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
@@ -45,7 +46,7 @@ const CustomCursor = ({ icon }) => {
         left: mousePosition.x,
       }}
       transition={{
-        type: "spring",
+        type: "tween",
         stiffness: 200,
         damping: 15,
       }}

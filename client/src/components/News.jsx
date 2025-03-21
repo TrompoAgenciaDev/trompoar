@@ -1,5 +1,7 @@
 import PostCard from "./posts/PostCard";
+import SimpleSlider from './slides/SimpleSlider'
 
+//styles
 import "@as/news.css";
 
 const News = () => {
@@ -31,8 +33,10 @@ const News = () => {
           </div>
         </div>
 
-
         {/* Clients carrousel component */}
+        <SimpleSlider
+          slide="customers"
+        />
 
       </div>
     </section>

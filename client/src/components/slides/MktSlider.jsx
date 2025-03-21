@@ -2,14 +2,14 @@ import Raul from "../../assets/mkt/raul.png";
 
 //styles and animations
 import "@as/slider-mkt.css";
-import {motion, useScroll, useSpring} from 'framer-motion'
+import {motion} from 'framer-motion'
 
 const clientes = {
   raul: Raul,
 };
 
 
-const ToolsSlider = () => {
+const MktSlider = () => {
   
   return (
     <motion.section 
@@ -43,4 +43,4 @@ const ToolsSlider = () => {
   );
 };
 
-export default ToolsSlider;
+export default MktSlider;

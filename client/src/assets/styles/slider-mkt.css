@@ -23,22 +23,18 @@
   width: 200px;
   height: 250px;
   top: 50%;
-  transform: translateY(-50%);  
-  background-image: image-set(
-    url(../../assets/noise-bg.webp) type("image/webp"),
-    url(../../assets/noise-bg.png) type("image/png"));
-    background-size: cover;
-    background-position: center;
+  transform: translateY(-50%);
   z-index: 10;
 }
 
 .slider-mkt::before{
   left: 0;
-  background: linear-gradient(to right, #212121, transparent);
+  background: linear-gradient(to right, rgb(28, 28, 28) 5%, rgba(33, 33, 33, 0.7) 30%, rgba(33, 33, 33, 0.3) 60%, transparent);
+
 }
 .slider-mkt::after{
   right: 0;
-  background: linear-gradient(to left, #212121, transparent);
+  background: linear-gradient(to left, rgb(28, 28, 28) 5%, rgba(33, 33, 33, 0.7) 30%, rgba(33, 33, 33, 0.3) 60%, transparent);
 
 }
 

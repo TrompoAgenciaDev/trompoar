@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Posts from "../json/posts.json";  // Suponiendo que tienes un JSON con los posts
+import Posts from "../json/posts.json";
+
+
+import '../assets/styles/single-post.css'
+
 
 const SinglePost = () => {
   const { slug } = useParams(); // Obtenemos el slug de la URL
@@ -18,9 +22,12 @@ const SinglePost = () => {
 
   return (
     <div className="single-post-container">
-      <h1>{post.title}</h1>
-      <p>{post.long_description}</p>
-      {/* Aquí puedes agregar más detalles del post, como la fecha, categorías, etc. */}
+      <div className="post-card">
+        <h1 className="title">{post.title}</h1>
+        <img className="featured-image" src={post.featured_image} alt="" />
+        <p className="content">{post.long_description}</p>
+        {/* Aquí puedes agregar más detalles del post, como la fecha, categorías, etc. */}
+      </div>
     </div>
   );
 };

@@ -6,7 +6,7 @@ import PortfolioCarruselItems from "./carrusels/PortfolioCarruselItems";
 // styles
 import '../assets/styles/PortfolioCarruselSection.css';
 
-function PortfolioCarrusel() {
+function PortfolioCarruselSection() {
   const { handleHover, handleLeave } = useHover();
 
   const [quantity, setQuantity] = useState(12);
@@ -24,6 +24,10 @@ function PortfolioCarrusel() {
   if (loading) return <p>Cargando...</p>;
   if (error) return <p>{error}</p>;
 
+  // Duplicamos los elementos para un carrusel infinito
+  const duplicatedItems = [...items, ...items, ...items, ...items, ...items, ...items];
+
+
   return (
     <div className="portfolio-section noise-bg">
       <div className="title-section">
@@ -34,24 +38,21 @@ function PortfolioCarrusel() {
       </div>
 
       <div className="portfolio-carrusel">
-        {/* Repetimos el array de los items para crear el carrusel infinito */}
-        {[...Array(3)].flatMap((_, repeatIndex) =>
-          items.map((item, index) => (
-            <PortfolioCarruselItems
-              key={`${item.id}-${repeatIndex}-${index}`}
-              id={item.id}
-              title={item.title}
-              type="portfolio"
-              backgroundImage={item.featured_image}
-              enlacePortfolio={item.enlacePortfolio}
-              onMouseEnter={() => handleHover(item.id)}
-              onMouseLeave={handleLeave}
-            />
-          ))
-        )}
+        {duplicatedItems.map((item, index) => (
+          <PortfolioCarruselItems
+            key={`${item.id}-${index}`}
+            id={item.id}
+            title={item.title}
+            type="portfolio"
+            backgroundImage={item.featured_image}
+            enlacePortfolio={item.enlacePortfolio}
+            onMouseEnter={() => handleHover(item.id)}
+            onMouseLeave={handleLeave}
+          />
+        ))}
       </div>
     </div>
   );
 }
 
-export default PortfolioCarrusel;
+export default PortfolioCarruselSection;

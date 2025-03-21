@@ -1,13 +1,38 @@
+import { motion } from 'framer-motion';
+import { useState } from 'react'
+
 import '../assets/styles/portfolio-items.css'
 
 
 function PortfolioCarruselItem({id, title, backgroundImage, enlacePortfolio}) {
+
+
+  const [velocityReduction, setVelocityReduction] = useState(20)
+
+  const SlowSpeed = () => {
+    setVelocityReduction(5);
+  }
+  const NormalSpeed = () => {
+    setVelocityReduction(20);
+  }
+
   return (
-    <a href={enlacePortfolio} data-id={id} className="portfolio-card">
+    <motion.a
+      onMouseOver={SlowSpeed}
+      onMouseLeave={NormalSpeed}
+      animate={{
+        x: ["-0%", "-100%"],
+      }}
+      transition={{
+        ease: "linear",
+        duration: velocityReduction,
+        repeat: Infinity,
+      }}
+      href={enlacePortfolio} data-id={id} className="portfolio-card">
       <div className="portfolio-card" style={{backgroundImage: `url(${backgroundImage})`}}>
         <h2 className='portfolio-title'>{title}</h2>
       </div>
-    </a>
+    </motion.a>
   );
 }
 
