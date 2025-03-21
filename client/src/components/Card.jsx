@@ -5,7 +5,7 @@ function Card({ title, subtitle, description, className, id }) {
   
   const { handleHover, handleLeave } = useHover();
   return (
-    <div className={`card ${className}`}
+    <div className={`card stikcy ${className}`}
       onMouseEnter={() => handleHover(id)}
       onMouseLeave={handleLeave}
     >

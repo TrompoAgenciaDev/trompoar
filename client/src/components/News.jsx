@@ -1,38 +1,40 @@
 import PostCard from "./posts/PostCard";
 
-import "@as/preFooter.css";
+import "@as/news.css";
 
 const News = () => {
   return (
     <section className="news-section">
-      <div className="title-section">
-        <h1 className="title">
-          Trompo <b>News</b>
-        </h1>
-        <div className="subtitle-section">
-          <span>Novedades Digitales</span>
-          <a className="all-news-button" href="">Ver todo</a>
+      <div className="news-container">
+        <div className="title-section">
+          <h1 className="title">
+            Trompo <span className="hover-y">News</span>
+          </h1>
+          <div className="subtitle-section">
+            <span>Novedades Digitales</span>
+            <a className="all-news-button" href="">Ver todo</a>
+          </div>
         </div>
-      </div>
 
-      {/* Gallery News Component */}
-      <PostCard
-        initialLimit={3}
-        maxLimit={3}
-      />
+        {/* Gallery News Component */}
+        <PostCard
+          initialLimit={3}
+          maxLimit={3}
+        />
 
-      <div className="title-section">
-        <h1 className="title">
-          <b>Somos</b> el puente entre grandes ideas y resultados.
-        </h1>
-        <div className="subtitle-section">
-          <span>Marcas que confiaron en nuestra experiencia.</span>
+        <div className="title-section">
+          <h1 className="title">
+            <span className="hover-y">Somos</span> el puente entre grandes ideas y resultados.
+          </h1>
+          <div className="text-section">
+            <span>Marcas que confiaron en nuestra experiencia.</span>
+          </div>
         </div>
+
+
+        {/* Clients carrousel component */}
+
       </div>
-
-
-      {/* Clients carrousel component */}
-
     </section>
   );
 };

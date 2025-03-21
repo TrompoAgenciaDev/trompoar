@@ -16,6 +16,14 @@ import Branding from "../pages/Branding";
 import InboundMarketing from "../pages/InboundMarketing";
 import SocialMedia from "../pages/SocialMedia";
 
+import News from '../pages/News.jsx';
+
+//templates
+import SinglePost from '../templates/singlePost';
+import SinglePortfolio from '../templates/singlePortfolio';
+
+
+
 const routesConfig = {
   main: [
     { path: "/", label: "Home", Component: Home },
@@ -23,6 +31,7 @@ const routesConfig = {
     { path: "/marketing-digital", label: "Marketing Digital", Component: MarketingDigital },
     { path: "/desarrollo-web-y-branding", label: "Desarrollo Web y Branding", Component: DesarrolloWebYBranding },
     { path: "/marketing-de-contenidos", label: "Marketing de Contenidos", Component: MarketingDeContenidos },
+    { path: "/news", label: "News", Component: News},
     { path: "/contact", label: "Contact", Component: Contact },
   ],
   marketingDigital: [
@@ -38,6 +47,9 @@ const routesConfig = {
     { path: "/marketing-de-contenidos/inbound-marketing", label: "Inbound Marketing", Component: InboundMarketing },
     { path: "/marketing-de-contenidos/social-media", label: "Social Media", Component: SocialMedia },
   ],
+  posts:[
+    { path: "/post/:slug", Component: SinglePost }
+  ]
 };
 
 export default routesConfig;

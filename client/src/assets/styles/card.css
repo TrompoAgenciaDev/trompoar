@@ -1,6 +1,6 @@
 .section-container{  
   width: 100%;
-  height: 2000px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -37,13 +37,24 @@
 }
 
 .cards-container{
+  width: 100%;
+  height: auto;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   gap: 20px;
   padding: 20px;
+}
+
+.title-container{
+  width: 900px;
+  position: sticky;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .title-section{
@@ -63,11 +74,13 @@
 
 .card{
   width: 900px;
+  position: sticky;
+  top: 150px;
+  overflow: visible;
   display: flex;
   flex-direction: column;
   gap: 30px; 
   border-radius: 58px;
-  overflow: hidden;
   padding-top: 10px;
 }
 
@@ -117,4 +130,9 @@
 .card.card-golden{
   background-color: #E88D10;
   color: #ffffff;
+}
+
+.stikcy{
+  position: sticky;
+  top: 150px;
 }

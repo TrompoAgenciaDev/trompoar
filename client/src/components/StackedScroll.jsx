@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { useRef } from "react";
+
 import Card from "./Card";
 
 const dataCard = [
@@ -40,7 +42,6 @@ const dataCard = [
 ];
 
 export default function StackedScroll() {
-  
 
   return (
     <motion.section 
@@ -60,10 +61,12 @@ export default function StackedScroll() {
     >
       <div className="cards-container">
 
-        <h2 className="title-section">Estrategia digital aplicada</h2>
-        <h1 className="subtitle-section">
-          Nuestra <strong>base estratégica</strong>
-        </h1>
+        <div className="title-container">
+          <h2 className="title-section">Estrategia digital aplicada</h2>
+          <h1 className="subtitle-section">
+            Nuestra <strong>base estratégica</strong>
+          </h1>
+        </div>
 
         {Array(1).fill(null).map((_, index) =>
           Object.entries(dataCard).map(([key, {title, subtitle, description, className, id}]) => (

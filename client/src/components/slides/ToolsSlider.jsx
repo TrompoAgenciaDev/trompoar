@@ -1,33 +1,25 @@
-import Facebook from "/assets/toolsImg/facebook-ads.png";
-import Google from "/assets/toolsImg/google-ads.png";
-import Ganalytics from "/assets/toolsImg/google-a.png";
-import GdataStudio from "/assets/toolsImg/google-data-studio.png";
-import GsearchConsole from "/assets/toolsImg/google-search-console.png";
-import Instagram from "/assets/toolsImg/instagram-ads.png";
-import Linkedin from "/assets/toolsImg/linkedin-ads.png";
-import Semrush from "/assets/toolsImg/semrush.png";
-import Supermetrics from "/assets/toolsImg/supermetrics.png";
-import Woocommerce from "/assets/toolsImg/woocommerce.png";
-import Wordpress from "/assets/toolsImg/wordpress.png";
-import Zapier from "/assets/toolsImg/zapier.png";
+import Meta from "/assets/toolsImg/meta-ads.webp";
+import Google from "/assets/toolsImg/google-ads.webp";
+import Meta1 from "/assets/toolsImg/meta-ads.webp";
+import Google1 from "/assets/toolsImg/google-ads.webp";
+import Meta2 from "/assets/toolsImg/meta-ads.webp";
+import Google2 from "/assets/toolsImg/google-ads.webp";
+import Meta3 from "/assets/toolsImg/meta-ads.webp";
+import Google3 from "/assets/toolsImg/google-ads.webp";
 
 //styles and animations
 import "@as/slider-tool.css";
 import {motion, useScroll, useSpring} from 'framer-motion'
 
 const marcas = {
-  facebook: Facebook,
+  meta: Meta,
   google: Google,
-  ganalytics: Ganalytics,
-  gdatastudio: GdataStudio,
-  gsearchconsole: GsearchConsole,
-  instagram: Instagram,
-  linkedin: Linkedin,
-  semrush: Semrush,
-  supermetrics: Supermetrics,
-  woocommerce: Woocommerce,
-  wordpress: Wordpress,
-  zapier: Zapier,
+  meta1: Meta1,
+  google1: Google1,
+  meta2: Meta2,
+  google2: Google2,
+  meta3: Meta3,
+  google3: Google3,
 };
 
 

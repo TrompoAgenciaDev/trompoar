@@ -18,7 +18,7 @@
   z-index: 10;
 }
 
-.portfolio-card .title{
+.portfolio-card .portfolio-title{
   opacity: 0;
   text-transform: uppercase;
   font-size: 36px;
@@ -30,6 +30,6 @@
   opacity: 0.5;
 }
 
-.portfolio-card:hover .title{
+.portfolio-card:hover .portfolio-title{
   opacity: 1;
 }

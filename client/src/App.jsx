@@ -15,7 +15,7 @@ function App() {
 
 
   return (
-    <BrowserRouter basename="/trompoagencia/">
+    <BrowserRouter basename="/">
       <HoverProvider>
         <Header onTogglePopup={togglePopup} />
         <MenuPopup isOpen={isOpen} onClose={togglePopup} />
