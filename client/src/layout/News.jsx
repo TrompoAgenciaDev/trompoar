@@ -1,5 +1,5 @@
-import PostCard from "./posts/PostCard";
-import SimpleSlider from './slides/SimpleSlider'
+import PostCard from "../components/posts/PostCard";
+import SimpleSlider from '../components/slides/SimpleSlider'
 
 //styles
 import "@as/news.css";

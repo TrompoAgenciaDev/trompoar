@@ -1,75 +1,11 @@
-.section-container{  
+.str-card-container{
   width: 100%;
-  height: auto;
+  height: 62vh;
+  padding-bottom: 100px;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  position: relative;
-  padding: 70px 0;
-  overflow: hidden;
-}
-
-.section-container::after,
-.section-container::before{
-  content: '';
-  position: absolute;
-  width: 100%;
-  left: 0;
-  z-index: -1;
-}
-
-.section-container::before{
-  background-color: #FEC235;
-  height: 40%;
-  top: 0;
-}
-
-.section-container::after{
-  background-color: #303030;
-  height: 60%;
-  bottom: 0;
-  background-image: image-set(
-    url(./noise-bg.webp) type("image/webp"),
-    url(./noise-bg.png) type("image/png"));  
-  background-size: cover;
-  background-position: center center;
-}
-
-.cards-container{
-  width: 100%;
-  height: auto;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 20px;
-  padding: 20px;
-}
-
-.title-container{
-  width: 900px;
-  position: sticky;
-  overflow: visible;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-}
-
-.title-section{
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 1;
-  color: #212121;
-}
-
-.subtitle-section{
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 1;
-  margin-bottom: 50px;
-  color: #212121;
+  align-items: center;
+  background-color: transparent;
 }
 
 .card{
@@ -84,7 +20,7 @@
   padding-top: 10px;
 }
 
-.card-header{
+.str-card-header{
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -92,13 +28,13 @@
   padding: 20px 40px;
 }
 
-.card-body{
+.str-card-body{
   display: flex;
   flex-direction: column;
   padding: 0 40px 20px;
 }
 
-.card-footer{
+.str-card-footer{
   width: 100%;
   height: 150px;
   background-image: image-set(
@@ -130,9 +66,4 @@
 .card.card-golden{
   background-color: #E88D10;
   color: #ffffff;
-}
-
-.stikcy{
-  position: sticky;
-  top: 150px;
 }

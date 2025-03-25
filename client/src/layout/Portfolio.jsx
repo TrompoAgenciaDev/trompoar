@@ -1,13 +1,13 @@
 import { useState } from "react";
-import { useHover } from "../context/HoverContext";
+// import { useHover } from "../context/HoverContext";
 import useJsonConsulting from "../hooks/useJsonConsulting";
-import PortfolioCarruselItems from "./carrusels/PortfolioCarruselItems";
+import PortfolioCarruselItems from "../components/carrusels/PortfolioCarruselItems";
 
 // styles
-import '../assets/styles/PortfolioCarruselSection.css';
+import '../assets/styles/portfolio.css';
 
-function PortfolioCarruselSection() {
-  const { handleHover, handleLeave } = useHover();
+function Portfolio() {
+  // const { handleHover, handleLeave } = useHover();
 
   const [quantity, setQuantity] = useState(12);
   const [category, setCategory] = useState("");
@@ -46,8 +46,8 @@ function PortfolioCarruselSection() {
             type="portfolio"
             backgroundImage={item.featured_image}
             enlacePortfolio={item.enlacePortfolio}
-            onMouseEnter={() => handleHover(item.id)}
-            onMouseLeave={handleLeave}
+            // onMouseEnter={() => handleHover(item.id)}
+            // onMouseLeave={handleLeave}
           />
         ))}
       </div>
@@ -55,4 +55,4 @@ function PortfolioCarruselSection() {
   );
 }
 
-export default PortfolioCarruselSection;
+export default Portfolio;

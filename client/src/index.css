@@ -21,6 +21,10 @@
   margin: 0;
 }
 
+*{
+  position: relative;
+}
+
 body{
   width: 100%;
   height: auto;
@@ -63,6 +67,7 @@ img{
 .hover-y{
   font-weight: 900;
   transition: color .3s ease-in-out;
+  cursor: none;
 }
 
 .hover-y:hover{

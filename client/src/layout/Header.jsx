@@ -1,9 +1,9 @@
 import { useState } from "react";
 
-import Icons from './Icons';
+import Icons from '../components/Icons';
 
 //styles & animations
-import '@as/header.css'
+import '../assets/styles/header.css'
 import { motion } from "framer-motion";
 
 const Header = ({onTogglePopup}) => {

@@ -1,21 +1,19 @@
-import Hero from "../components/Hero";
-import PostHeroSection from "../components/PostHeroSection.jsx";
-import StackedScroll from "../components/StackedScroll.jsx";
-import PortfolioCarruselSection from "../components/PortfolioCarruselSection.jsx";
-import News from "../components/News.jsx";
-import ContactSection from "../components/ContactSection.jsx";
-import PreFooter from "../components/PreFooter.jsx";
+import Hero from "../layout/Hero";
+import PostHero from "../layout/PostHero.jsx";
+import Portfolio from '../layout/Portfolio.jsx'
+import News from "../layout/News.jsx";
+import Contact from "../layout/Contact.jsx";
+import ExtraTitleSection from "../layout/ExtraTitleSection.jsx";
 
 const Home = () => {
   return (
     <main>
       <Hero/>
-      <PostHeroSection/>
-      <StackedScroll/>
-      <PortfolioCarruselSection/>
+      <PostHero/>
+      <ExtraTitleSection/>
+      <Portfolio/>
       <News/>
-      <PreFooter/>
-      <ContactSection/>
+      <Contact/>
     </main>
   );
 };

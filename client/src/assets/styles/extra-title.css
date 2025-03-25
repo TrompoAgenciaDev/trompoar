@@ -1,0 +1,23 @@
+.extra-container{
+  width: 900px;
+  height: 25dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-bottom: 50px;
+}
+
+.extra-container h1,
+.extra-container h2{
+  display: inline-block;
+  text-align: left;
+}
+
+.trompo-bg{
+  background-color: #fec235;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

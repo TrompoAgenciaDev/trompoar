@@ -1,9 +1,9 @@
-import SimpleSlider from "./slides/SimpleSlider";
-import MktSlider from "./slides/MktSlider";
+import SimpleSlider from "../components/slides/SimpleSlider";
+import MktSlider from "../components/slides/MktSlider";
 
 //styles
 import "@as/post-hero.css";
-import EstrategiesText from "./EstrategiesText";
+import EstrategiesText from "../components/EstrategiesText";
 
 const PostHeroSection = () => {
   return (
@@ -14,7 +14,6 @@ const PostHeroSection = () => {
       />
       <MktSlider/>
       <EstrategiesText/>
-
     </section>
   );
 }

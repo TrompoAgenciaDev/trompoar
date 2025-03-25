@@ -1,10 +1,10 @@
-import Menu from "@/components/Menu";
-import routesConfig from "@/config/routesConfig";
+import Menu from "../components/Menu";
+import routesConfig from "../config/routesConfig";
 
-import Icon from './Icons';
+import Icon from '../components/Icons';
 
 //styles and animations, if..
- import '@as/footer.css'
+ import '../assets/styles/footer.css'
 
 const Footer = () => {
   return (

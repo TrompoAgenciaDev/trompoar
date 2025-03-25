@@ -1,16 +1,13 @@
 import useHoverBackground from "../hooks/useHoverBackground";
-import { useHover } from "../context/HoverContext";
-import PortfolioCarruselSection from "./PortfolioCarruselSection";
+import PortfolioCarruselSection from "../components/PortfolioCarruselSection";
 
 //styles
-import "@as/portfolio-section.css";
+import "../assets/styles/portfolio-section.css";
 
 const PortfolioSection = () => {
   const {
     backgroundImage,
     opacity,
-    handleMouseEnter,
-    handleMouseLeave,
   } = useHoverBackground();
 
   return (
