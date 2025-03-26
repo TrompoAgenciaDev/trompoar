@@ -10,7 +10,7 @@ const Home = () => {
     <main>
       <Hero/>
       <PostHero/>
-      <ExtraTitleSection/>
+      <ExtraTitleSection/>      
       <Portfolio/>
       <News/>
       <Contact/>

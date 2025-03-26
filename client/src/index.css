@@ -56,7 +56,7 @@ img{
   width: 95%;
 }
 
-.noise-bg{  
+.noise-bg{
   background-image: image-set(
     url(./noise-bg.webp) type("image/webp"),
     url(./noise-bg.png) type("image/png"));

@@ -7,7 +7,7 @@ function Contact() {
 
   return(
 
-    <div className="container noise-bg">
+    <div className="container pre-footer noise-bg">
       <div className="grid-container">
         <div className="contact-info-container">
           <h1>Contactanos</h1>

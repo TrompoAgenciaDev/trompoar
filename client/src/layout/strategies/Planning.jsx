@@ -5,8 +5,12 @@ import { motion } from 'framer-motion'
 
 function Planning () {
   return (
-    <div className="str-card-container trompo-bg">
-      <div className='card stikcy card-black'>
+    <div className="str-card-container"
+
+    >
+      <motion.div 
+        className='card stikcy card-black'
+      >
         <div className="str-card-header">
           <h2>Planning</h2>
           <span>Donde nace la estrategia</span>
@@ -17,7 +21,7 @@ function Planning () {
         <div className="str-card-footer">
           <img src="./card-footer.png" alt='Planning' />
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

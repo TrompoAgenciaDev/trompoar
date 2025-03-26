@@ -27,7 +27,6 @@ export default function ExtraTitleSection() {
           type:'tween',
         }}
       >
-
         <div className="extra-container">
           <h2 className="title-section">Estrategia digital aplicada</h2>
           <h1 className="subtitle-section">
@@ -37,11 +36,14 @@ export default function ExtraTitleSection() {
         
         
       </motion.section>
-      <Planning/>
-      <Creatividad/>
-      <SocialMedia/>
-      <Audiencias/>
-      <Analitica/>
+      
+      <div>
+        <Planning/>
+        <Creatividad/>
+        <SocialMedia/>
+        <Audiencias/>
+        <Analitica/>
+      </div>
     </>
   );
 }
