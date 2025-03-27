@@ -15,6 +15,7 @@
   align-items: center;
   flex-direction: column;
   gap: 50px;
+  color: #212121;
 }
 
 .title-section{
@@ -23,7 +24,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 20px;
+  font-size: 30px;
 }
 
 .title{
@@ -34,12 +35,21 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 0;
-  
+  font-size: 22px;
 }
 
 .text-section{
   width: 100%;
   font-size: 18px;
   text-align: left;
+  font-size: 22px;
+}
+
+.all-news-button{
+  color: #212121;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 24px;
 }

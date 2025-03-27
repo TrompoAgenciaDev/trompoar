@@ -49,6 +49,11 @@ const routesConfig = {
   ],
   posts:[
     { path: "/post/:slug", Component: SinglePost }
+  ],
+  outsourcing: [
+    { path: "/marketing-digital", label: "Marketing Digital", Component: MarketingDigital },
+    { path: "/desarrollo-web-y-branding", label: "Desarrollo Web y Branding", Component: DesarrolloWebYBranding },
+    { path: "/marketing-de-contenidos", label: "Marketing de Contenidos", Component: MarketingDeContenidos },    
   ]
 };
 

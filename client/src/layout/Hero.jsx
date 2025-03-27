@@ -1,10 +1,22 @@
-//styles and animations
+// Hook
+import { useHeroImages } from "../hooks/useHeroImage";
+
+// Styles
 import "@as/hero.css";
 
-const Hero = () => {
+const Hero = ({ location = "home" }) => {
+  const [heroImagePng, heroImageWebp] = useHeroImages(location);
+
   return (
-      <div className="container hero-container">
-      </div>
+    <div
+      className="hero-container container"
+      style={{
+        backgroundImage: `image-set(
+          url(${heroImageWebp}) type("image/webp"),
+          url(${heroImagePng}) type("image/png")
+        )`,
+      }}
+    ></div>
   );
 };
 

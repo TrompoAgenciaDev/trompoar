@@ -1,12 +1,26 @@
+import {useRef} from 'react';
 
 //styles
 import '../../assets/styles/card.css'
-import { motion } from 'framer-motion'
+import { motion, useScroll, useTransform } from 'framer-motion'
 
 function SocialMedia () {
+  
+  const targetRef = useRef(null);
+  const {scrollYProgress} = useScroll({
+    target: targetRef,
+    offset: ["start start", "end 130%"],
+  })
+
+  const scale = useTransform(scrollYProgress, [0, 1], ['1', '.9']);
+
   return (
     <div className="str-card-container">
-      <div className='card stikcy card-grey'>
+      <motion.div 
+        className='card stikcy card-grey'
+        ref={targetRef}
+        style={{scale}}
+      >
         <div className="str-card-header">
           <h2>Social Media</h2>
           <span>Donde nace la estrategia</span>
@@ -17,7 +31,7 @@ function SocialMedia () {
         <div className="str-card-footer">
           <img src="./card-footer.png" alt="Social Media" />
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

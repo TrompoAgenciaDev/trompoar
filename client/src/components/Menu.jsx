@@ -29,7 +29,7 @@ const Menu = ({
                 delay: 0.4 + 0.1 * (menuItems.length - index - 1.2),
               }}
             >
-              <Link to={path} onClick={onClose}>
+              <Link to={path} onClick={onClose} className="hover-y">
                 {label}
               </Link>
             </motion.div>

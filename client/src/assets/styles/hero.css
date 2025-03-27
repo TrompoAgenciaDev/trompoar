@@ -6,12 +6,6 @@
   align-items: flex-start;
   padding: 250px 10px 100px;
   gap: 50px;
-
-  
-  background-image: image-set(
-    url(../../assets/hero-img.webp) type("image/webp"),
-    url(../../assets/hero-img.png) type("image/png")
-  );
   background-size: cover;
   background-position: top center;
 }

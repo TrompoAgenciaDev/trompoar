@@ -14,7 +14,7 @@ const News = () => {
           </h1>
           <div className="subtitle-section">
             <span>Novedades Digitales</span>
-            <a className="all-news-button" href="">Ver todo</a>
+            <a href='/news' className="all-news-button">Ver todo</a>
           </div>
         </div>
 

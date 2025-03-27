@@ -26,6 +26,10 @@
   padding: 0;
 }
 
+.contact-info-container{
+  justify-content: space-between;
+}
+
 .contact-info-container h1{
   font-size: 66px;
   color: #ffffff;

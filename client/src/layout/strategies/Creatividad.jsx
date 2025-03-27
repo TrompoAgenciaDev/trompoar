@@ -1,12 +1,26 @@
+import {useRef} from 'react';
 
 //styles
 import '../../assets/styles/card.css'
-import { motion } from 'framer-motion'
+import { motion, useScroll, useTransform } from 'framer-motion'
 
 function Creatividad () {
+  
+  const targetRef = useRef(null);
+  const {scrollYProgress} = useScroll({
+    target: targetRef,
+    offset: ["start start", "end end"],
+  })
+
+  const scale = useTransform(scrollYProgress, [0, 1], ['1', '.9']);
+
   return (
     <div className="str-card-container">
-      <div className='card stikcy card-white'>
+      <motion.div 
+        className='card stikcy card-white'
+        ref={targetRef}
+        style={{scale}}
+      >
         <div className="str-card-header">
           <h2>Creatividad</h2>
           <span>Donde las ideas cobran vida</span>
@@ -17,7 +31,7 @@ function Creatividad () {
         <div className="str-card-footer">
           <img src="./card-footer.png" alt='Creatividad' />
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

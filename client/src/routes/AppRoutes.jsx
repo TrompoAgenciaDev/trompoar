@@ -7,7 +7,7 @@ const AppRoutes = () => {
       {Object.values(routesConfig)
         .flat()
         .map(({ path, Component }, index) => (
-          <Route key={index} path={path} element={<Component />} />
+          <Route key={index} path={path} element={<Component/>} />
         ))}
     </Routes>
   );

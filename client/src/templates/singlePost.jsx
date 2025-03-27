@@ -7,7 +7,7 @@ import '../assets/styles/single-post.css'
 
 
 const SinglePost = () => {
-  const { slug } = useParams(); // Obtenemos el slug de la URL
+  const { slug } = useParams();
   const [post, setPost] = useState(null);
 
   useEffect(() => {
@@ -17,7 +17,7 @@ const SinglePost = () => {
   }, [slug]); // Se vuelve a ejecutar cada vez que el slug cambia
 
   if (!post) {
-    return <p>Post no encontrado</p>; // Mensaje si no se encuentra el post
+    return <p>Post no encontrado</p>;
   }
 
   return (

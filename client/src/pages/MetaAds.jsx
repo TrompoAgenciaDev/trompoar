@@ -1,5 +1,14 @@
+import Hero from '../layout/Hero'
+
 const MetaAds = () => {
-  return ("");
+
+  return (
+    <>
+      <Hero
+        location='mAds'
+      />
+    </>
+  );
 }
 
 

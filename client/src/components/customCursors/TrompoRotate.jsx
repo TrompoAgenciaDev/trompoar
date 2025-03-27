@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useHover } from "../../context/HoverContext";
 import Icons from "../Icons"; 
-import '../assets/styles/custom-cursor.css';
+import '../../assets/styles/custom-cursor.css';
 import { motion } from "framer-motion";
 
 const CustomCursor = ({ icon }) => {

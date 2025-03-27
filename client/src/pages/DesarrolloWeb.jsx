@@ -1,5 +1,14 @@
+import Hero from '../layout/Hero'
+
 const DesarrolloWeb = () => {
-  return ("");
+
+  return (
+    <>
+      <Hero
+        location='web'
+      />
+    </>
+  );
 }
 
 

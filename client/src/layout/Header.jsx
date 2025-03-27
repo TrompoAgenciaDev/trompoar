@@ -29,6 +29,7 @@ const Header = ({onTogglePopup}) => {
         >
           <Icons iconName="logo"/>
         </motion.a>
+        
         <motion.button
           className="nav-button"
           initial={{

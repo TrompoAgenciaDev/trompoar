@@ -1,5 +1,14 @@
+import Hero from '../layout/Hero'
+
 const GoogleAds = () => {
-  return ("");
+
+  return (
+    <>
+      <Hero
+        location='gAds'
+      />
+    </>
+  );
 }
 
 

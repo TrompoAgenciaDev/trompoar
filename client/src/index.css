@@ -13,6 +13,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html,
 *,
 *::before,
 *::after {
@@ -70,8 +71,10 @@ img{
   cursor: none;
 }
 
-.hover-y:hover{
+.hover-y:hover,
+.hover-y:hover a{
   color: #fec235;
+  cursor: none;
 }
 
 @media (min-width: 768px) {

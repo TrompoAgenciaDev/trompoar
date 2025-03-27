@@ -13,7 +13,7 @@ const MenuPopup = ({ isOpen, onClose }) => {
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          className="popup-menu"
+          className="popup-menu noise-bg"
           initial={{
             y: -1140,
             scale: 0.25,

@@ -1,8 +1,17 @@
+import Hero from '../layout/Hero';
+import PostCard from '../components/posts/PostCard';
 
-function News(){
+function News() {
   return (
-    <h1>News</h1>
-  );  
+    <>
+      <Hero location="news" />
+      <div className="flex-container container">
+        <PostCard
+          maxLimit={4}
+        /> 
+      </div>
+    </>
+  );
 }
 
 export default News;

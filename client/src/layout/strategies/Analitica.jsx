@@ -1,15 +1,26 @@
+import {useRef} from 'react';
 
 //styles
 import '../../assets/styles/card.css'
-import { motion } from 'framer-motion'
+import { motion, useScroll, useTransform } from 'framer-motion'
 
 function Analitica () {
+  
+  const targetRef = useRef(null);
+  const {scrollYProgress} = useScroll({
+    target: targetRef,
+    offset: ["start start", "end start"],
+  })
+
+  const scale = useTransform(scrollYProgress, [0, 1], ['1', '.98']);
+  
   return (
-    <motion.div 
-      className="str-card-container"
-      
-    >
-      <div className='card card-golden'>
+    <div className="str-card-container">
+      <motion.div 
+        className='card card-golden'
+        ref={targetRef}
+        style={{scale}}
+      >
         <div className="str-card-header">
           <h2>Analítica</h2>
           <span>Decisiones basadas en datos</span>
@@ -20,8 +31,8 @@ function Analitica () {
         <div className="str-card-footer">
           <img src="./card-footer.png" alt='Analítica' />
         </div>
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   );
 }
 

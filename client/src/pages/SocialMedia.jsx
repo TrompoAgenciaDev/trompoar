@@ -1,5 +1,14 @@
+import Hero from '../layout/Hero'
+
 const SocialMedia = () => {
-  return ("");
+
+  return (
+    <>
+      <Hero
+        location='social'
+      />
+    </>
+  );
 }
 
 
