@@ -29,14 +29,7 @@ function Portfolio() {
 
 
   return (
-    <div className="portfolio-section noise-bg">
-      <div className="title-section">
-        <h2 className="title">
-          Proyectos que <span>Conectan</span>, <br />
-          Ideas que <span>Impactan</span>
-        </h2>
-      </div>
-
+    <div className="portfolio-section">
       <div className="portfolio-carrusel">
         {duplicatedItems.map((item, index) => (
           <PortfolioCarruselItems

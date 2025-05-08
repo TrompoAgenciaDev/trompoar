@@ -3,13 +3,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 0;
-
 }
 
 .news-container{
   width: 100%;
-  max-width: 1140px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,6 +22,17 @@
   align-items: center;
   flex-direction: column;
   font-size: 30px;
+}
+
+.news-section::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  background-color: #FFDD00;
+  clip-path: polygon(57% 28%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
 
 .title{
@@ -52,4 +60,10 @@
   text-decoration: none;
   font-weight: 700;
   font-size: 24px;
+}
+
+@media (min-width: 1024px) {
+  .news-section{
+    padding: 0 20px;
+  }
 }

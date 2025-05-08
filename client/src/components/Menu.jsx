@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import Icons from '../components/Icons';
 
 // Componente Menu
 const Menu = ({ 
@@ -20,7 +21,7 @@ const Menu = ({
     <nav className="nav-menu">
       <ul className={classMenu}>
         {menuItems.map(({ path, label }, index) => (
-          <li key={index}>
+          <li className="nav-menu-item" key={index}>
             <motion.div
               className="item-menu-container"
               initial={{ y: -200 }}
@@ -29,8 +30,22 @@ const Menu = ({
                 delay: 0.4 + 0.1 * (menuItems.length - index - 1.2),
               }}
             >
-              <Link to={path} onClick={onClose} className="hover-y">
-                {label}
+              <Link to={path} onClick={onClose} className={menuType === "movement" ? "movement-menu-item" : "hover-y"}>
+                <div className="left-content">
+                  {label}
+                  {
+                    menuType === "movement" && (
+                      <div className="movement-icon-container">
+                        <Icons iconName="customCircle"/>
+                      </div>
+                    )
+                  }
+                </div>
+                {menuType === "movement" && (
+                  <div className="right-content">
+                    <Icons iconName={['trompo1', 'trompo2', 'trompo3', 'trompo4'][index]} movementIcons={true} />
+                  </div>
+                )}
               </Link>
             </motion.div>
           </li>

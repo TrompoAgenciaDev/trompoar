@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Menu from "../components/Menu";
+import routesConfig from "../config/routesConfig";
 
 import Icons from '../components/Icons';
 
@@ -11,7 +13,7 @@ const Header = ({onTogglePopup}) => {
 
   return (
     <header className="header">
-      <div className="container header-container noise-bg">
+      <div className="container header-header">
         <motion.a
           className="logo-img"
           href="/"
@@ -27,7 +29,7 @@ const Header = ({onTogglePopup}) => {
             stiffness: 350,
           }}
         >
-          <Icons iconName="logo"/>
+          <Icons iconName="logoBlack"/>
         </motion.a>
         
         <motion.button
@@ -52,6 +54,13 @@ const Header = ({onTogglePopup}) => {
           <Icons iconName={"burguer"}/>
 
         </motion.button>
+      </div>
+      <div className="container footer-header">
+        <Menu
+          menuType="movement"
+          routes={routesConfig}
+          classMenu="movement-menu"
+        />
       </div>
     </header>
   );

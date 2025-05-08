@@ -18,6 +18,12 @@ import SocialMedia from "../pages/SocialMedia";
 
 import News from '../pages/News.jsx';
 
+//Movimiento
+import Creatividad from "../pages/movement/Creatividad";
+import Desarrollo from "../pages/movement/Desarrollo";
+import Estrategias from "../pages/movement/Estrategias";
+import Interaccion from "../pages/movement/Interaccion";
+
 //templates
 import SinglePost from '../templates/singlePost';
 import SinglePortfolio from '../templates/singlePortfolio';
@@ -33,6 +39,12 @@ const routesConfig = {
     { path: "/marketing-de-contenidos", label: "Marketing de Contenidos", Component: MarketingDeContenidos },
     { path: "/news", label: "News", Component: News},
     { path: "/contact", label: "Contact", Component: Contact },
+  ],
+  movement: [
+    { path: "/movement/creatividad", label: "Creatividad en movimiento", Component: Creatividad },
+    { path: "/movement/desarrollo", label: "Desarrollo en movimiento", Component: Desarrollo },
+    { path: "/movement/estrategias", label: "Estrategias en movimiento", Component: Estrategias },
+    { path: "/movement/interaccion", label: "Interacción en movimiento", Component: Interaccion },
   ],
   marketingDigital: [
     { path: "/marketing-digital/analitica-web", label: "Analítica Web", Component: AnaliticaWeb },

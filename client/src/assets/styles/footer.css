@@ -1,13 +1,17 @@
 .footer{
-  width: 100%;
-  padding: 70px 10px 50px;
-  background-color: #242424;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);
+  background-color: #000000;
 }
 
-.footer .logo-img img{
+footer.container{
+  background-color: #FFDD00;
+  padding: 0;
+}
+
+.footer .footer-logo-img img{
   width: 250px;
 }
 
@@ -32,18 +36,6 @@
 .footer-section:first-child {
   display: flex;
   align-items: center;
-}
-
-.footer-section:nth-of-type(2)::after,
-.footer-section:nth-of-type(2)::before{
-  content: "";
-  width: 2px;
-  height: 90%;
-  background-color: #fff;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  align-self: center;
 }
 
 .footer-section:nth-of-type(2)::before{
@@ -91,13 +83,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   font-size: 14px;
 }
 
 @media (min-width: 955px) {
   .footer{
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 100px;
   }
   .grid-footer-container{
@@ -106,37 +98,29 @@
   }
 } 
 
-@media (min-width: 1366px) {
-  .footer{
-    height: 60dvh;
-    padding: 100px 0;
-  }
-  .footer-section h3{
-    font-size: 22px;
-  }
-  .footer-section a,
-  .footer-section p{
-    font-size: 18px;
+@media (min-width: 1024px) {
+  .footer-section:first-child{
+    justify-content: center;
   }
   .grid-footer-container{
-    width: 100%;
+    width: 1140px;
     display: grid;
-    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-columns: 2fr 1fr;
     justify-content: space-between;
     align-items: center;
   }
-  .footer-section{
-    justify-content: center;
+  .nav-menu-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 10px;
   }
-  .social-icons img{
-    width: 30px;
+  .footer .footer-logo-img img{
+    width: 150px;
   }
 } 
 
 @media (min-width: 1600px) {
-  .footer .logo-img img{
-    width: 350px;
-  }
   .footer-section h3{
     font-size: 24px;
   }
@@ -147,10 +131,7 @@
   }
   .grid-footer-container{
     width: 100%;
-    display: grid;
-    grid-template-columns: 3fr 4fr 3fr;
     justify-content: space-between;
-    align-items: center;
   }
   .social-icons img{
     width: 36px;

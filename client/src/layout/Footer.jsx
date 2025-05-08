@@ -8,41 +8,49 @@ import Icon from '../components/Icons';
 
 const Footer = () => {
   return (
-    <footer className="medium-container footer noise-bg">
-      <div className="grid-footer-container">
+    <footer className="container">
+      <div className="footer">
+        <div className="grid-footer-container">
           <section className="footer-section">
-            <a className="logo-img" href="/">
-              <Icon iconName="logo"/>
+            <div className="nav-menu-container">
+              <div className="footer-menu">
+                <h3>Interacción</h3>
+                <Menu
+                  menuType="marketingDigital"
+                  routes={routesConfig}
+                  classMenu="footer-menu-items"
+                />
+              </div>
+              <div className="footer-menu">
+                <h3>Desarrollo</h3>
+                <Menu
+                  menuType="desarrolloWebYBranding"
+                  routes={routesConfig}
+                  classMenu="footer-menu-items"
+                />
+              </div>
+              <div className="footer-menu">
+                <h3>Estrategia</h3>
+                <Menu
+                  menuType="marketingDeContenidos"
+                  routes={routesConfig}
+                  classMenu="footer-menu-items"
+                />
+              </div>
+              <div className="footer-menu">
+                <h3>Creatividad</h3>
+                <Menu
+                  menuType="marketingDeContenidos"
+                  routes={routesConfig}
+                  classMenu="footer-menu-items"
+                />
+              </div>
+            </div>
+          </section>        
+          <section className="footer-section">
+            <a className="footer-logo-img" href="/">
+              <Icon iconName="logoAmarillo"/>
             </a>
-          </section>
-          <section className="footer-section">
-            <div className="footer-menu">
-              <h3>Marketing<br/>Digital</h3>
-              <Menu
-                menuType="marketingDigital"
-                routes={routesConfig}
-                classMenu="footer-menu-items"
-              />
-            </div>
-            <div className="footer-menu">
-              <h3>Desarrollo y<br/> Marca</h3>
-              <Menu
-                menuType="desarrolloWebYBranding"
-                routes={routesConfig}
-                classMenu="footer-menu-items"
-              />
-            </div>
-            <div className="footer-menu">
-              <h3>Contenidos<br/><br/></h3>
-              <Menu
-                menuType="marketingDeContenidos"
-                routes={routesConfig}
-                classMenu="footer-menu-items"
-              />
-            </div>
-          </section>
-
-          <section className="footer-section">
             <div className="footer-tags">
               <p>#Marketing Digital Aplicado</p>
               <p>#Reportes en tiempo real</p>
@@ -51,11 +59,12 @@ const Footer = () => {
               <div className="social-icons">
                 <Icon iconName="facebook" />
                 <Icon iconName="instagram" />
-                <Icon iconName="googleplus" />
+                <Icon iconName="linkedin" />
               </div>
             </div>
           </section>
         </div>
+      </div>
     </footer>
   );
 };
