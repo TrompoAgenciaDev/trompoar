@@ -79,12 +79,21 @@ footer.container{
   margin-top: 16px;
 }
 
+.social-icons{
+  display: flex;
+  gap: 10px;
+}
+
 .footer-section:last-child{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   font-size: 14px;
+}
+
+.footer .left-content{
+  font-weight: 300;
 }
 
 @media (min-width: 955px) {
@@ -118,6 +127,9 @@ footer.container{
   .footer .footer-logo-img img{
     width: 150px;
   }
+  .social-icons img{
+    width: 28px;
+  }
 } 
 
 @media (min-width: 1600px) {
@@ -132,8 +144,5 @@ footer.container{
   .grid-footer-container{
     width: 100%;
     justify-content: space-between;
-  }
-  .social-icons img{
-    width: 36px;
   }
 } 

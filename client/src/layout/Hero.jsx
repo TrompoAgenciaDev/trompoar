@@ -22,17 +22,31 @@ const Hero = ({ location = "home" }) => {
           </video>        
         </div>
       ) : (
-        <div className="hero-container container">
-          <div
-            className="hero-image"
-            style={{
-              backgroundImage: `image-set(
-                url(${heroImageWebp}) type("image/webp"),
-                url(${heroImagePng}) type("image/png")
-              )`,
-            }}
-          />
-        </div>
+        location === "web" ? (
+          <div className="hero-video-container">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="hero-video"
+            >
+              <source src={HomeVideo} type="video/mp4" />
+            </video>        
+          </div>
+        ) : (
+          <div className="hero-container container">
+            <div
+              className="hero-image"
+              style={{
+                backgroundImage: `image-set(
+                  url(${heroImageWebp}) type("image/webp"),
+                  url(${heroImagePng}) type("image/png")
+                )`,
+              }}
+            />
+          </div>
+        )
       )}
     </>
   );

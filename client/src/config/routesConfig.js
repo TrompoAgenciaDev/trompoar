@@ -47,27 +47,27 @@ const routesConfig = {
     { path: "#", label: "Estrategias en movimiento", Component: Estrategias },
     { path: "#", label: "Interacción en movimiento", Component: Interaccion },
   ],
-  marketingDigital: [
-    { path: "/marketing-digital/analitica-web", label: "Analítica Web", Component: AnaliticaWeb },
-    { path: "/marketing-digital/google-ads", label: "Google Ads", Component: GoogleAds },
-    { path: "/marketing-digital/meta-ads", label: "Meta Ads", Component: MetaAds },
+  estrategias: [
+    { path: "#", label: "Outsourcing", Component: AnaliticaWeb },
+    { path: "#", label: "Google Ads", Component: GoogleAds },
+    { path: "#", label: "Meta Ads", Component: MetaAds },
+    { path: "#", label: "Analitica Digital", Component: MetaAds },
   ],
-  desarrolloWebYBranding: [
-    { path: "/desarrollo-web-y-branding/desarrollo-web", label: "Desarrollo Web", Component: DesarrolloWeb },
-    { path: "/desarrollo-web-y-branding/branding", label: "Branding", Component: Branding },
+  creatividad: [
+    { path: "#", label: "Diseño", Component: Desarrollo },
+    { path: "#", label: "Multimedia", Component: Desarrollo },
   ],
-  marketingDeContenidos: [
-    { path: "/marketing-de-contenidos/inbound-marketing", label: "Inbound Marketing", Component: InboundMarketing },
-    { path: "/marketing-de-contenidos/social-media", label: "Social Media", Component: SocialMedia },
+  interaccion: [
+    { path: "#", label: "Social Media", Component: Desarrollo },
+    { path: "#", label: "Inbound Marketing", Component: Desarrollo },
+  ],
+  desarrollo: [
+    { path: "#", label: "Wordpress", Component: Desarrollo },
+    { path: "#", label: "Personalizado", Component: Desarrollo }, 
   ],
   posts:[
     { path: "/post/:slug", Component: SinglePost }
   ],
-  outsourcing: [
-    { path: "/marketing-digital", label: "Marketing Digital", Component: MarketingDigital },
-    { path: "/desarrollo-web-y-branding", label: "Desarrollo Web y Branding", Component: DesarrolloWebYBranding },
-    { path: "/marketing-de-contenidos", label: "Marketing de Contenidos", Component: MarketingDeContenidos },    
-  ]
 };
 
 export default routesConfig;

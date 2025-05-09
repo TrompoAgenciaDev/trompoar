@@ -75,7 +75,7 @@ img{
 .hover-y:hover,
 .hover-y:hover a{
   color: #fec235;
-  cursor: none;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {

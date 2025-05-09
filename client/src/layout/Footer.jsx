@@ -14,9 +14,9 @@ const Footer = () => {
           <section className="footer-section">
             <div className="nav-menu-container">
               <div className="footer-menu">
-                <h3>Interacción</h3>
+                <h3>Estrategias</h3>
                 <Menu
-                  menuType="marketingDigital"
+                  menuType="estrategias"
                   routes={routesConfig}
                   classMenu="footer-menu-items"
                 />
@@ -24,15 +24,7 @@ const Footer = () => {
               <div className="footer-menu">
                 <h3>Desarrollo</h3>
                 <Menu
-                  menuType="desarrolloWebYBranding"
-                  routes={routesConfig}
-                  classMenu="footer-menu-items"
-                />
-              </div>
-              <div className="footer-menu">
-                <h3>Estrategia</h3>
-                <Menu
-                  menuType="marketingDeContenidos"
+                  menuType="desarrollo"
                   routes={routesConfig}
                   classMenu="footer-menu-items"
                 />
@@ -40,7 +32,15 @@ const Footer = () => {
               <div className="footer-menu">
                 <h3>Creatividad</h3>
                 <Menu
-                  menuType="marketingDeContenidos"
+                  menuType="creatividad"
+                  routes={routesConfig}
+                  classMenu="footer-menu-items"
+                />
+              </div>
+              <div className="footer-menu">
+                <h3>Interacción</h3>
+                <Menu
+                  menuType="interaccion"
                   routes={routesConfig}
                   classMenu="footer-menu-items"
                 />
