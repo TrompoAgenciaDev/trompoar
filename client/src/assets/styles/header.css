@@ -152,7 +152,6 @@ header {
   .logo-img img {
     width: 160px;
   }
-
   .logo-img {
     position: absolute;
     top: 50%;
@@ -188,7 +187,7 @@ header {
     font-size: 16px;
   }
   .footer-header .left-content{
-    width: 155px;
+    width: 170px;
     gap: 16px;
   }
   .footer-header .right-content{

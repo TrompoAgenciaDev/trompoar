@@ -8,12 +8,13 @@
   gap: 50px;
   background-size: cover;
   background-position: top center;
-  background-color: #000000;
 }
 
 .hero-video-container,
 .hero-video-container video{
   background-color: #000000;
+  z-index: 10;
+  
 }
 
 

@@ -46,7 +46,7 @@ const About = () => {
                     }}
                   >
                     <div className="acordeon-content-inner">
-                      <img className="acordeon-img" src="../src/assets/logo-black.png" alt="Trompo Imagen" />
+                      <img className="acordeon-img" src="/assets/aboutImg/quienes-somos.png" alt="Trompo Imagen" />
                       <div className="text-content">
                         <p>Somos un <span className='bold-text'>movimiento</span></p>
                         <p> que <span className='bold-text'>construye marcas</span> </p>
@@ -87,7 +87,7 @@ const About = () => {
                     }}
                   >
                     <div className="acordeon-content-inner">
-                      <img className="acordeon-img" src="../src/assets/wu.gif" alt="Western Union" />
+                      <img className="acordeon-img" src="/assets/aboutImg/portfolio.png" alt="Western Union" />
                       <div className="text-content">
                         <p className='bold-text'>Proyectos que conectan.</p>
                         <p> ideas que impactan. </p>
@@ -127,7 +127,7 @@ const About = () => {
                     }}
                   >
                     <div className="acordeon-content-inner">
-                      <img className="acordeon-img" src="../src/assets/proyectos.png" alt="Trompo Imagen" />
+                      <img className="acordeon-img" src="/assets/aboutImg/noticias.png" alt="Trompo Imagen" />
                       <div className="text-content">
                         <p> Enterate de las </p>
                         <p><span className='bold-text'>Noticias</span> del mundo digital</p>

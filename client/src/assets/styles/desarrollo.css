@@ -2,6 +2,8 @@
   width: 100%;
   height: 600px;
   background-color: #FFDD00;
+  margin-top: -2px;
+  z-index: 9;
 }
 
 .web-container{
@@ -26,11 +28,15 @@
 
 .servicios-web{
   background-color: #000000;
+  margin-top: -2px;
+  z-index: 8;
 }
 
 .servicios-grid-container{
   display: grid;
   grid-template-columns: 1fr;
+  margin-top: -2px;
+  z-index: 8;
 }
 
 .landing-container::before,
@@ -72,6 +78,7 @@
   .servicios-grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
   }
   .text-container{
     width: 600px;
@@ -87,15 +94,15 @@
   .landing-container{
     height: 600px;
   }
-  .lading-container .img-container{
-    margin-top: 140px;
+  .landing-container > .img-container{
+    margin-top: 200px;
   }
   .text-container h3,
   .text-container h4{
     width: 100%;
   }
   .text-container h3{
-    font-size: 26px;
+    font-size: 30px;
   }
   .text-container h4{
     margin-bottom: 20px;
@@ -131,5 +138,31 @@
   .ecommerce-container .img-container{
     margin-top: 70px;
     margin-left: 70px;
+  }
+  .catalogo-container .text-container{
+    margin-top: 250px;
+    color: #ffffff;    
+  }
+  .text-container p{
+    font-size: 18px;
+    font-weight: 300;    
+  }
+  .servicios-web .portfolio-section{
+    height: auto;
+  }
+
+  .servicios-web .portfolio-section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-color: #FFDD00;
+    clip-path: polygon(29% 71%, 100% 0, 100% 79%, 0 100%, 0 0);
+  }
+
+  .catalogo-container{
+    margin-bottom: -350px;
   }
 }

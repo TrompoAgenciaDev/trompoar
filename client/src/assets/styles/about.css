@@ -159,7 +159,9 @@
     font-size: 20px;
   }
   .about-right .text-section {
-    font-size: 18px;
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: 150px;
   }
   .about-left::before{
     content: '';
@@ -170,7 +172,7 @@
     height: 216px;
     border-radius: 30%;
     background-color: #FFDD00;
-    background-image: url('../src/assets/trompo-black.svg');
+    background-image: url('/trompo-black.svg');
     background-size: cover;
     background-position: center;
     z-index: 10;
