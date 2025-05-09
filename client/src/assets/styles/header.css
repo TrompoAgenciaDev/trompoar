@@ -168,7 +168,7 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 118px;
+    width: 130px;
     gap: 10px;
   }
   .footer-header .movement-icon-container{

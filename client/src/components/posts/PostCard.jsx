@@ -38,7 +38,7 @@ const PostCard = ({ initialLimit = 999, maxLimit = 1000, category, tag, type = "
           const category = post?.categories?.[0] || "Sin categoría"; // Obtener la primera categoría
 
           // Manejar la imagen de portada, si no hay una imagen, usar una imagen por defecto
-          const featuredImage = post?.featured_image || "url-de-imagen-por-defecto.jpg"; 
+          const featuredImage = post?.featured_image || "/assets/postImg/post.png"; 
 
           return (
             <div className="post-card" key={post.id} style={{

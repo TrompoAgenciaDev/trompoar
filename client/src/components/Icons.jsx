@@ -6,6 +6,7 @@ import ArrowTr from '/assets/icons/arrow-tr.svg';
 import CustomCircle from '/assets/icons/custom-circle.svg';
 import LogoAmarillo from '@a/logo-amarillo.png';
 import LogoBlack from '@a/logo-black.png';
+import CustomBlackCircle from '/assets/icons/custom-black-circle.svg';
 
 
 const icons = {
@@ -17,6 +18,7 @@ const icons = {
   logoAmarillo: LogoAmarillo,
   logoBlack: LogoBlack,
   customCircle: CustomCircle,
+  customBlackCircle: CustomBlackCircle,
 };
 
 const trompoIcons = {

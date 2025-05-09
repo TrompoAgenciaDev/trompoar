@@ -1,5 +1,5 @@
 :root {
-  font-family: 'Creato Display', system-ui, sans-serif;
+  font-family: 'Montserrat', 'Poppins', system-ui, sans-serif;
   line-height: 1.5;
   font-weight: 300;
 
@@ -35,7 +35,6 @@ body{
 }
 
 #root{
-  /* margin-top: 80px; */
   overflow: hidden;
   background-color: #000000;
 }

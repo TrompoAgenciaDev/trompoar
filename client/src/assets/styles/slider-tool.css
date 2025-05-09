@@ -27,7 +27,7 @@
 
 .slider-inner img {
   width: 100%;
-  max-width: 250px;
+  max-width: 150px;
   height: 100%;
   object-fit: contain;
 }
@@ -42,11 +42,8 @@
   }
 }
 
-@media (min-width: 1366px) {
-  .slider-container{
-    height: 200px;
-  }
+@media (min-width: 1024px) {
   .slider-tool{
-    height: 70px;
+    height: 50px;
   }
 }

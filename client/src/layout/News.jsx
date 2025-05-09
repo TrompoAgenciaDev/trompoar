@@ -8,10 +8,10 @@ const News = () => {
   return (
     <section className="news-section">
       <div className="news-container">
-        <h1 className="title">
-          Noticias
-        </h1>
         <div className="title-section">
+          <h1 className="title">
+            Noticias
+          </h1>
           <p>
             <span className="bold-text">Somos</span> el puente entre <br/>
           </p>

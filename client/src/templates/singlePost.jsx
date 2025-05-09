@@ -21,14 +21,21 @@ const SinglePost = () => {
   }
 
   return (
-    <div className="single-post-container">
-      <div className="post-card">
-        <h1 className="title">{post.title}</h1>
-        <img className="featured-image" src={post.featured_image} alt="" />
-        <p className="content">{post.long_description}</p>
-        {/* Aquí puedes agregar más detalles del post, como la fecha, categorías, etc. */}
+    <>
+      <div className="single-post-container">
+        <div className="post-card">
+          <h1 className="post-title title">{post.title}</h1>
+          <img className="featured-image" src={post.featured_image} alt="" />
+          <div
+            className="post-content"
+            dangerouslySetInnerHTML={{ __html: post.long_description }}
+          />
+        </div>
       </div>
-    </div>
+      <div className="clip-container">
+        <div className="pre-footer-clip"></div>
+      </div>
+    </>
   );
 };
 

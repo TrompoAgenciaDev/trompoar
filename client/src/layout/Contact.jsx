@@ -6,7 +6,7 @@ function Contact() {
 
   return(
 
-    <div className="container pre-footer noise-bg">
+    <div className="container pre-footer">
       <div className="grid-container">
         <div className="contact-info-container">
           <div className="text-container">

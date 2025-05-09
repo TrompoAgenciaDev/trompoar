@@ -33,18 +33,19 @@ import SinglePortfolio from '../templates/singlePortfolio';
 const routesConfig = {
   main: [
     { path: "/", label: "Home", Component: Home },
-    { path: "/about", label: "About", Component: About },
-    { path: "/marketing-digital", label: "Marketing Digital", Component: MarketingDigital },
-    { path: "/desarrollo-web-y-branding", label: "Desarrollo Web y Branding", Component: DesarrolloWebYBranding },
-    { path: "/marketing-de-contenidos", label: "Marketing de Contenidos", Component: MarketingDeContenidos },
-    { path: "/news", label: "News", Component: News},
-    { path: "/contact", label: "Contact", Component: Contact },
+    // { path: "#", label: "Nosotros", Component: About },
+    { path: "/movement/desarrollo", label: "Desarrollo en movimiento", Component: Desarrollo },
+    { path: "#", label: "Creatividad en movimiento", Component: Creatividad },
+    { path: "#", label: "Estrategias en movimiento", Component: Estrategias },
+    { path: "#", label: "Interacción en movimiento", Component: Interaccion },
+    { path: "#", label: "Noticias", Component: News},
+    { path: "#", label: "Contacto", Component: Contact },
   ],
   movement: [
-    { path: "/movement/creatividad", label: "Creatividad en movimiento", Component: Creatividad },
     { path: "/movement/desarrollo", label: "Desarrollo en movimiento", Component: Desarrollo },
-    { path: "/movement/estrategias", label: "Estrategias en movimiento", Component: Estrategias },
-    { path: "/movement/interaccion", label: "Interacción en movimiento", Component: Interaccion },
+    { path: "#", label: "Creatividad en movimiento", Component: Creatividad },
+    { path: "#", label: "Estrategias en movimiento", Component: Estrategias },
+    { path: "#", label: "Interacción en movimiento", Component: Interaccion },
   ],
   marketingDigital: [
     { path: "/marketing-digital/analitica-web", label: "Analítica Web", Component: AnaliticaWeb },

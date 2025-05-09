@@ -9,19 +9,24 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
-  gap: 50px;
+  gap: 20px;
   color: #212121;
 }
 
 .title-section{
-  width: 100%;  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  width: 100%;
   font-size: 30px;
+  color: #ffffff;
+}
+
+.title-section p{
+  font-weight: 200;
+}
+
+.bold-text{
+  font-weight: 700;
 }
 
 .news-section::before{
@@ -36,7 +41,12 @@
 }
 
 .title{
-  width: 100%;
+  font-size: 54px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #FFDD00;
+  text-align: left;
+  
 }
 
 .title-section .subtitle-section{
@@ -65,5 +75,9 @@
 @media (min-width: 1024px) {
   .news-section{
     padding: 0 20px;
+  }
+  .news-container{
+    width: 100%;
+    max-width: 1200px;
   }
 }
