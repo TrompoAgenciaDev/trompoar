@@ -1,7 +1,11 @@
 import Hero from '../../layout/Hero';
 import '../../assets/styles/desarrollo.css';
 import Portfolio from '../../layout/Portfolio.jsx';
+<<<<<<< HEAD
 import RedButton from '../../components/buttons/redBtton.jsx';
+=======
+import Contact from "../../layout/Contact.jsx";
+>>>>>>> d779322c9c1bb5a057eec493ba86b064e92e9df2
 
 const Desarrollo = () => {
 
@@ -56,24 +60,25 @@ const Desarrollo = () => {
             <img src="/assets/webImg/globo.png" alt="Landing Page" />
           </div>
         </div>
-
         <div className="catalogo-container servicios-grid-container">
           <div className="img-container">
             <img src="/assets/webImg/bg-3.png" alt="Landing Page" />
           </div>
           <div className="text-container">
-            <h3 className="servicios-title">One Page y Landing Page</h3>
-            <h4 className="servicios-subtitle">Soluciones Web de Impacto</h4>
+            <h3 className="servicios-title">Web con Catálogo</h3>
 
+<<<<<<< HEAD
             <p>Tanto las <span className="bold-text">One Page</span> como las <span className="bold-text">Landing Pages</span> ofrecen soluciones web diseñadas para maximizar la experiencia del usuario y potenciar tus objetivos de negocio.</p>
             <RedButton />
+=======
+            <p>Diseñamos entornos digitales que ofrecen una exploración fácil y atractiva, permitiendo a tus visitantes navegar por tus productos o servicios de manera intuitiva y descubrir lo que tu negocio tiene para ofrecer.</p>
+>>>>>>> d779322c9c1bb5a057eec493ba86b064e92e9df2
           </div>
         </div>
 
         <Portfolio/>
-
-      </section>
-      
+      </section>      
+      <Contact/>
     </>
   );
 }

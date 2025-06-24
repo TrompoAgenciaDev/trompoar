@@ -7,13 +7,13 @@ import '../assets/styles/portfolio-items.css'
 function PortfolioCarruselItem({id, title, backgroundImage, enlacePortfolio}) {
 
 
-  const [velocityReduction, setVelocityReduction] = useState(20)
+  const [velocityReduction, setVelocityReduction] = useState(50)
 
   const SlowSpeed = () => {
     setVelocityReduction(5);
   }
   const NormalSpeed = () => {
-    setVelocityReduction(20);
+    setVelocityReduction(260);
   }
 
   return (
@@ -21,7 +21,7 @@ function PortfolioCarruselItem({id, title, backgroundImage, enlacePortfolio}) {
       onMouseOver={SlowSpeed}
       onMouseLeave={NormalSpeed}
       animate={{
-        x: ["-0%", "-100%"],
+        x: ["-0%", "-300%"],
       }}
       transition={{
         ease: "linear",
