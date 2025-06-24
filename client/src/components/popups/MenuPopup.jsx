@@ -34,7 +34,7 @@ const MenuPopup = ({ isOpen, onClose }) => {
             stiffness: 250,
           }}
         >
-          <div className="medium-container popup-content">
+          <div className="popup-content">
             <motion.button
               className="close-button"
               onClick={onClose}

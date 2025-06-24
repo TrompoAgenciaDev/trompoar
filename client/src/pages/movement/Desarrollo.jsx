@@ -1,6 +1,7 @@
 import Hero from '../../layout/Hero';
 import '../../assets/styles/desarrollo.css';
 import Portfolio from '../../layout/Portfolio.jsx';
+import RedButton from '../../components/buttons/redBtton.jsx';
 
 const Desarrollo = () => {
 
@@ -31,6 +32,7 @@ const Desarrollo = () => {
             <h4 className="servicios-subtitle">Soluciones Web de Impacto</h4>
 
             <p>Tanto las <span className="bold-text">One Page</span> como las <span className="bold-text">Landing Pages</span> ofrecen soluciones web diseñadas para maximizar la experiencia del usuario y potenciar tus objetivos de negocio.</p>
+            <RedButton />
           </div>
         </div>
         <div className="institucional-container servicios-grid-container">
@@ -40,6 +42,7 @@ const Desarrollo = () => {
             <h3 className="servicios-title">Web Institucional</h3>
 
             <p>Potenciamos tu negocio con webs institucionales de alto impacto, nuestro equipo de desarrolladores expertos en <span className="bold-text">WordPress</span> realiza integraciones con diferentes aplicaciones, administra y crea plugins, y personaliza templates para adaptarse a las necesidades de tu negocio.</p>
+            <RedButton />
           </div>
         </div>
         <div className="landing-container ecommerce-container servicios-grid-container">
@@ -47,6 +50,7 @@ const Desarrollo = () => {
             <h3 className="servicios-title">Tienda Online</h3>
 
             <p>Estas páginas están diseñadas para ofrecer una experiencia de compra en línea fácil y atractiva, permitiendo que los visitantes naveguen por los productos, realicen compras, realicen pagos en línea y reciban los productos o servicios solicitados</p>
+            <RedButton />
           </div>
           <div className="img-container">
             <img src="/assets/webImg/globo.png" alt="Landing Page" />
@@ -62,8 +66,10 @@ const Desarrollo = () => {
             <h4 className="servicios-subtitle">Soluciones Web de Impacto</h4>
 
             <p>Tanto las <span className="bold-text">One Page</span> como las <span className="bold-text">Landing Pages</span> ofrecen soluciones web diseñadas para maximizar la experiencia del usuario y potenciar tus objetivos de negocio.</p>
+            <RedButton />
           </div>
-        </div>        
+        </div>
+
         <Portfolio/>
 
       </section>
